@@ -1,38 +1,119 @@
+* {
+  padding: 0;
+  margin: 0;
+  background: #1A1A1D;
+  /* color: #EAE7DC; */
+  /* color: #E85A4F; */
+  /* color: #9E5A63; */
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav {
+  width: 500px;
+  margin-left: auto;
+  margin-right: 5rem;
+  padding: 1em;
+}
+nav ul, nav ul div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul li, nav ul div li {
+  cursor: pointer;
+  color: #E85A4F;
+  font-size: 1.3rem
+}
+nav ul {
+  list-style: none;
+}
+nav ul div {
+  width: 100px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+header {
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  flex-direction: column;
+}
+header h1 {
+  font-size: 5rem;
+  margin: 0;
+  color: #EAE7DC;
+}
+header span {
+  color: #E85A4F
+}
+header h2 {
+  font-size: 3.5rem;
+  color: #E85A4F;
+  margin-top: 3rem;
 }
 
-.App-link {
-  color: #61dafb;
+main {
+  margin: 0 
+}
+h2 {
+  font-size: 2.5rem
+}
+.sub h2 {
+  color: #E85A4F;
+  margin-bottom: 3rem;
+  background: transparent;
+}
+.sub p {
+  font-size: 1.2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.about, .projects {
+  background: #2E1114;
+  /* width: 900px; */
+  width: 96%;
+  margin: 0 auto 4rem auto;
+  /* text-align: left; */
+  padding: 2.3em;
+  
+}
+
+.about div {
+  display: flex;
+  justify-content: space-between;
+  background: transparent;
+}
+.about div p {
+  line-height: 1.8rem;
+  width: 900px;
+  margin: 4.5rem auto 0 auto;
+  background: transparent;
+  color: #EAE7DC;
+}
+.about div img {
+  background: transparent;
+  margin-right: auto;
+  margin-left: auto;
+  width: 450px;
+  height: 350px;
+}
+.tech-div {
+  display: flex;
+  justify-content: space-between;
+  width: 750px;
+  margin: 2.5rem auto 4rem auto;
+}
+.tech-div div p {
+  margin-bottom: 1.5em;
+}
+.tech div p {
+  color: #EAE7DC;
+}
+
+.inner-project {
+  background: transparent;
+  display: grid;
+  
 }
