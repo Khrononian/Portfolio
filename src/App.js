@@ -1,7 +1,8 @@
 import './App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faEye, faCode } from '@fortawesome/free-solid-svg-icons'
-import { faGithub, faLinkedin, faHtml5, faCss3, faSquareJs, faReact, faGit, faNpm } from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faLinkedin, faHtml5, faCss3, faSquareJs, faReact, faGitAlt, faNpm } from '@fortawesome/free-brands-svg-icons'
+import laptop from './laptop.webp'
 
 function App() {
   return (
@@ -13,49 +14,48 @@ function App() {
           <li>Skills</li>
           <li>Projects</li>
           <div>
-            <li><FontAwesomeIcon icon={faGithub} /></li>
-            <li><FontAwesomeIcon icon={faLinkedin} /></li>
-            <li><FontAwesomeIcon icon={faEnvelope} /></li>
+            <li><FontAwesomeIcon icon={faGithub} style={{color: 'white'}} size='lg' /></li>
+            <li><FontAwesomeIcon icon={faLinkedin} style={{color: '#0072b1'}} size='lg' /></li>
+            <li><FontAwesomeIcon icon={faEnvelope}  style={{color: 'white'}} size='lg' /></li>
           </div>
         </ul>
       </nav>
       <header>
-        <h1>Hi, my name is Alvin</h1>
+        <h1>Hey, my name is <span>Alvin</span></h1>
         <h2>Frontend Developer</h2>
       </header>
       <main>
-        <div>
+        <div className='about sub'>
           <h2>About Me</h2>
-          <p>I'm a self taught Front End Developer looking to expand my horizons. My programming journey started when I decided to start coding again, but in a different field. From there, the Odin Project became one of the ways to dive deeper into coding. Aside from coding, I am a gamer, rollerblading and spending time with my cat.</p>
+          <div>
+            <p>I'm a self-taught Front End Developer looking to expand my horizons. The first time I started anything coding related was in middle school on a site called Roblox. From my middle school years until my freshman year of high school, I would code games on Roblox in the language of Lua. A year and a half after graduating I decided to get back into coding but in a different field. From there, I found the Odin Project which became one of the many ways to dive deeper into coding. Aside from coding, I am a gamer, rollerblading and spending time with my cat.</p>
+            <img src={laptop} alt='laptop' />
+          </div>
+          
         </div>
-        <div>
+        <div className='tech sub'>
           <h2>Technologies</h2>
-            <div>
+            <div className='tech-div'>
               <div>
-                <p>HTML</p>
-                <p>CSS</p>
+                <p><FontAwesomeIcon icon={faHtml5} style={{color: '#FF5733'}} size='xl' /> HTML</p>
+                <p><FontAwesomeIcon icon={faCss3}  style={{color: "#005eff"}} size='xl' /> CSS</p>
               </div>
               <div>
-                <p>Javascript</p>
-                <p>React</p>
+                <p><FontAwesomeIcon icon={faSquareJs} style={{color: '#F0DB4F'}} size='xl' /> Javascript</p>
+                <p><FontAwesomeIcon icon={faReact} style={{color: '00d8ff'}} size='xl' /> React</p>
               </div>
               <div>
-                <p>Git</p>
-                <p>Npm</p>
+                <p><FontAwesomeIcon icon={faGitAlt} style={{color: '#F1502F'}} size='xl' /> Git</p>
+                <p><FontAwesomeIcon icon={faNpm} style={{color: '#CC3534'}} size='xl' /> Npm</p>
               </div>
               <div>
-                <p>Webpack</p>
-                <p>Github</p>
-              </div>
-              <div>
-                <p>Firebase</p>
-                <p>Jest</p>
+                <p><FontAwesomeIcon icon={faGithub} style={{color: 'white'}} size='xl' /> Github</p>
               </div>
             </div>
         </div>
-        <div>
+        <div className='projects sub'>
           <h2>Projects</h2>
-            <div>
+            <div className='inner-project'>
               <div>
                 <div>
                   <img />
