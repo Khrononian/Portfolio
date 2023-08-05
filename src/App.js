@@ -3,6 +3,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faEye, faCode } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faLinkedin, faHtml5, faCss3, faSquareJs, faReact, faGitAlt, faNpm } from '@fortawesome/free-brands-svg-icons'
 import laptop from './laptop.webp'
+import SteamImg from './Images/SteamClone.png'
+import LeagueImg from './Images/LeagueOfLegends.png'
 
 function App() {
   return (
@@ -58,7 +60,7 @@ function App() {
             <div className='inner-project'>
               <div>
                 <div>
-                  <img />
+                  <img src={SteamImg} alt='Project'/>
                 </div>
                 <p>Steam Clone</p>
                 <p>Replica of the steam website to showcase games</p>
@@ -74,7 +76,7 @@ function App() {
 
               <div>
                 <div>
-                  <img />
+                  <img src={LeagueImg} alt='Project'/>
                 </div>
                 <p>League of Legend Champions</p>
                 <p>Champions from league of legends </p>
@@ -92,7 +94,7 @@ function App() {
 
               <div>
                 <div>
-                  <img />
+                  <img src='' alt='Project'/>
                 </div>
                 <p>Where's Waldo</p>
                 <p>Replica of the steam website to showcase games</p>
@@ -108,7 +110,7 @@ function App() {
 
               <div>
                 <div>
-                  <img />
+                  <img src='' alt='Project'/>
                 </div>
                 <p>Fallout Memory Card Game</p>
                 <p>Memory card game with creatures from the fallout game</p>
