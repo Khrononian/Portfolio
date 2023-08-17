@@ -5,6 +5,8 @@ import { faGithub, faLinkedin, faHtml5, faCss3, faSquareJs, faReact, faGitAlt, f
 import laptop from './laptop.webp'
 import SteamImg from './Images/SteamClone.png'
 import LeagueImg from './Images/LeagueOfLegends.png'
+import WaldoImg from './Images/WheresWaldo.png'
+import FalloutImg from './Images/FalloutMemoryCard.png'
 
 function App() {
   return (
@@ -58,68 +60,70 @@ function App() {
         <div className='projects sub'>
           <h2>Projects</h2>
             <div className='inner-project'>
-              <div>
-                <div>
+              
+              <div className='padded-div'>
+                {/* <div>
                   <img src={SteamImg} alt='Project'/>
-                </div>
+                </div> */}
+                <img className='project-img' src={SteamImg} alt='Project'/>
                 <p>Steam Clone</p>
                 <p>Replica of the steam website to showcase games</p>
-                <div>
+                <div className='tech'>
                   <p>React</p>
                   <p>MUI</p>
                 </div>
-                <div>
-                  <button><FontAwesomeIcon icon={faEye} /> Live</button>
-                  <button><FontAwesomeIcon icon={faCode} /> Code</button>
+                <div className='btns'>
+                  <a href='https://steampoweredclone.netlify.app/' rel='noreferrer' target='_blank'><button><FontAwesomeIcon icon={faEye} enableBackground={false} /> Live</button></a>
+                  <a href='' rel='noreferrer' target='_blank'><button><FontAwesomeIcon icon={faCode} /> Code</button></a>
                 </div>
               </div>
 
-              <div>
+              <div className='padded-div'>
                 <div>
-                  <img src={LeagueImg} alt='Project'/>
+                  <img className='project-img' src={LeagueImg} alt='Project'/>
                 </div>
                 <p>League of Legend Champions</p>
                 <p>Champions from league of legends </p>
-                <div>
+                <div className='tech'>
                   <p>HTML</p>
                   <p>CSS</p>
                   <p>Javascript</p>
                   <p>Webpack</p>
                 </div>
-                <div>
-                  <button><FontAwesomeIcon icon={faEye} /> Live</button>
-                  <button><FontAwesomeIcon icon={faCode} /> Code</button>
+                <div className='btns'>
+                  <a href='https://leagueoflegendsna.netlify.app/' rel='noreferrer' target='_blank'><button><FontAwesomeIcon icon={faEye} /> Live</button></a>
+                  <a href='' rel='noreferrer' target='_blank'><button><FontAwesomeIcon icon={faCode} /> Code</button></a>
                 </div>
               </div>
 
-              <div>
+              <div className='padded-div'>
                 <div>
-                  <img src='' alt='Project'/>
+                  <img className='project-img' src={WaldoImg} alt='Project'/>
                 </div>
                 <p>Where's Waldo</p>
-                <p>Replica of the steam website to showcase games</p>
-                <div>
+                <p>Where's Waldo game with the usage of open view consoles</p>
+                <div className='tech'>
                   <p>React</p>
                   <p>MUI</p>
                 </div>
-                <div>
-                  <button><FontAwesomeIcon icon={faEye} /> Live</button>
-                  <button><FontAwesomeIcon icon={faCode} /> Code</button>
+                <div className='btns'>
+                  <a href='https://wheresthatcharacter.netlify.app/' rel='noreferrer' target='_blank'><button><FontAwesomeIcon icon={faEye} /> Live</button></a>
+                  <a href='' rel='noreferrer' target='_blank'><button><FontAwesomeIcon icon={faCode} /> Code</button></a>
                 </div>
               </div>
 
-              <div>
+              <div className='padded-div'>
                 <div>
-                  <img src='' alt='Project'/>
+                  <img className='project-img' src={FalloutImg} alt='Project'/>
                 </div>
                 <p>Fallout Memory Card Game</p>
                 <p>Memory card game with creatures from the fallout game</p>
-                <div>
+                <div className='tech'>
                   <p>React</p>
                 </div>
-                <div>
-                  <button><FontAwesomeIcon icon={faEye} /> Live</button>
-                  <button><FontAwesomeIcon icon={faCode} /> Code</button>
+                <div className='btns'>
+                  <a href='https://falloutmemorycard.netlify.app/' rel='noreferrer' target='_blank'><button><FontAwesomeIcon icon={faEye} /> Live</button></a>
+                  <a href='' rel='noreferrer' target='_blank'><button><FontAwesomeIcon icon={faCode} /> Code</button></a>
                 </div>
               </div>
 
