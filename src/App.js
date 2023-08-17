@@ -66,24 +66,22 @@ function App() {
                   <img src={SteamImg} alt='Project'/>
                 </div> */}
                 <img className='project-img' src={SteamImg} alt='Project'/>
-                <p>Steam Clone</p>
+                <h2>Steam Clone</h2>
                 <p>Replica of the steam website to showcase games</p>
                 <div className='tech'>
                   <p>React</p>
                   <p>MUI</p>
                 </div>
                 <div className='btns'>
-                  <a href='https://steampoweredclone.netlify.app/' rel='noreferrer' target='_blank'><button><FontAwesomeIcon icon={faEye} enableBackground={false} /> Live</button></a>
-                  <a href='' rel='noreferrer' target='_blank'><button><FontAwesomeIcon icon={faCode} /> Code</button></a>
+                  <a href='https://steampoweredclone.netlify.app/' rel='noreferrer' target='_blank'><button><FontAwesomeIcon icon={faEye} /> Live</button></a>
+                  <a href='https://github.com/Khrononian/SteamClone' rel='noreferrer' target='_blank'><button><FontAwesomeIcon icon={faCode} /> Code</button></a>
                 </div>
               </div>
 
               <div className='padded-div'>
-                <div>
-                  <img className='project-img' src={LeagueImg} alt='Project'/>
-                </div>
-                <p>League of Legend Champions</p>
-                <p>Champions from league of legends </p>
+                <img className='project-img' src={LeagueImg} alt='Project'/>
+                <h2>League of Legends</h2>
+                <p>Champions from league of legends with the help of an API</p>
                 <div className='tech'>
                   <p>HTML</p>
                   <p>CSS</p>
@@ -92,15 +90,13 @@ function App() {
                 </div>
                 <div className='btns'>
                   <a href='https://leagueoflegendsna.netlify.app/' rel='noreferrer' target='_blank'><button><FontAwesomeIcon icon={faEye} /> Live</button></a>
-                  <a href='' rel='noreferrer' target='_blank'><button><FontAwesomeIcon icon={faCode} /> Code</button></a>
+                  <a href='https://github.com/Khrononian/League-Champions' rel='noreferrer' target='_blank'><button><FontAwesomeIcon icon={faCode} /> Code</button></a>
                 </div>
               </div>
 
               <div className='padded-div'>
-                <div>
-                  <img className='project-img' src={WaldoImg} alt='Project'/>
-                </div>
-                <p>Where's Waldo</p>
+                <img className='project-img' src={WaldoImg} alt='Project'/>
+                <h2>Where's Waldo</h2>
                 <p>Where's Waldo game with the usage of open view consoles</p>
                 <div className='tech'>
                   <p>React</p>
@@ -108,22 +104,20 @@ function App() {
                 </div>
                 <div className='btns'>
                   <a href='https://wheresthatcharacter.netlify.app/' rel='noreferrer' target='_blank'><button><FontAwesomeIcon icon={faEye} /> Live</button></a>
-                  <a href='' rel='noreferrer' target='_blank'><button><FontAwesomeIcon icon={faCode} /> Code</button></a>
+                  <a href='https://github.com/Khrononian/Where-s-Waldo' rel='noreferrer' target='_blank'><button><FontAwesomeIcon icon={faCode} /> Code</button></a>
                 </div>
               </div>
 
               <div className='padded-div'>
-                <div>
-                  <img className='project-img' src={FalloutImg} alt='Project'/>
-                </div>
-                <p>Fallout Memory Card Game</p>
+                <img className='project-img' src={FalloutImg} alt='Project'/>
+                <h2>Fallout Memory Card Game</h2>
                 <p>Memory card game with creatures from the fallout game</p>
                 <div className='tech'>
                   <p>React</p>
                 </div>
                 <div className='btns'>
                   <a href='https://falloutmemorycard.netlify.app/' rel='noreferrer' target='_blank'><button><FontAwesomeIcon icon={faEye} /> Live</button></a>
-                  <a href='' rel='noreferrer' target='_blank'><button><FontAwesomeIcon icon={faCode} /> Code</button></a>
+                  <a href='https://github.com/Khrononian/Memory-Card' rel='noreferrer' target='_blank'><button><FontAwesomeIcon icon={faCode} /> Code</button></a>
                 </div>
               </div>
 
