@@ -79,7 +79,7 @@ h2 {
   background: #2E1114;
   /* width: 900px; */
   width: 96%;
-  margin: 0 auto 4rem auto;
+  margin: 0 auto 0 auto;
   /* text-align: left; */
   padding: 2.3em;
   
@@ -101,7 +101,8 @@ h2 {
   background: transparent;
   margin-right: auto;
   margin-left: auto;
-  width: 450px;
+  width: 100%;
+  max-width: 450px;  
   height: 350px;
 }
 .tech-div {
@@ -123,4 +124,49 @@ h2 {
   grid-template-columns: repeat(3, 450px);
   justify-content: center;
   gap: 20px;
+}
+.padded-div {
+  display: flex;
+  flex-direction: column;
+}
+.project-img {
+  width: 100%;
+}
+.inner-project div {
+  color: #EAE7DC;
+}
+
+.tech, .btns {
+  display: flex;
+  justify-content: center;
+  
+}
+.tech {
+  margin: 2rem 0 1rem 0;
+  flex-direction: column;
+}
+.btns {
+  justify-content: space-between;
+  margin-top: auto;
+  padding-bottom: 1em;
+  width: 195px;
+  margin-left: 30%;
+  margin-right: auto;
+}
+.btns button {
+  cursor: pointer;
+  padding: .45em 1em;
+  background: #E85A4F;
+  border-radius: 7px;
+  color: #EAE7DC;
+  font-size: 1rem;
+  border-color: transparent;
+  transition: 500ms background;
+}
+.btns button:hover {
+  background: #db2e22
+}
+.btns button svg {
+  background: transparent;
+  pointer-events: none;
 }
