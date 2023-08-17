@@ -12,10 +12,16 @@
 }
 
 nav {
+  width: 100%;
+  padding: 1.1em 0;
+  position: fixed;
+  display: flex;
+  justify-content: flex-end;
+}
+nav ul {
   width: 500px;
-  margin-left: auto;
-  margin-right: 5rem;
-  padding: 1em;
+  list-style: none;
+  padding-right: 1.5em;
 }
 nav ul, nav ul div {
   display: flex;
@@ -26,9 +32,6 @@ nav ul li, nav ul div li {
   cursor: pointer;
   color: #E85A4F;
   font-size: 1.3rem
-}
-nav ul {
-  list-style: none;
 }
 nav ul div {
   width: 100px;
@@ -67,9 +70,9 @@ h2 {
   background: transparent;
 }
 .sub img {
-  width: 450px;
+  width: 100%;
   height: 300px;
-  /* object-fit: contain; */
+  /* max-width: 300px; */
 }
 .sub p {
   font-size: 1.2rem;
@@ -77,18 +80,15 @@ h2 {
 
 .about, .projects {
   background: #2E1114;
-  /* width: 900px; */
-  width: 96%;
-  margin: 0 auto 0 auto;
-  /* text-align: left; */
-  padding: 2.3em;
-  
+  width: 100%;
+  padding: 2.3em 0;
 }
 
 .about div {
   display: flex;
   justify-content: space-between;
   background: transparent;
+  flex-wrap: wrap;
 }
 .about div p {
   line-height: 1.8rem;
@@ -108,8 +108,11 @@ h2 {
 .tech-div {
   display: flex;
   justify-content: space-between;
-  width: 750px;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 750px;
   margin: 2.5rem auto 4rem auto;
+  padding: 1em 0;
 }
 .tech-div div p {
   margin-bottom: 1.5em;
@@ -121,7 +124,8 @@ h2 {
 .inner-project {
   background: transparent;
   display: grid;
-  grid-template-columns: repeat(3, 450px);
+  /* grid-template-columns: repeat(3, 450px); */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   justify-content: center;
   gap: 20px;
 }
@@ -129,8 +133,9 @@ h2 {
   display: flex;
   flex-direction: column;
 }
-.project-img {
-  width: 100%;
+.padded-div h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 .inner-project div {
   color: #EAE7DC;
@@ -150,7 +155,7 @@ h2 {
   margin-top: auto;
   padding-bottom: 1em;
   width: 195px;
-  margin-left: 30%;
+  margin-left: auto;
   margin-right: auto;
 }
 .btns button {
@@ -169,4 +174,15 @@ h2 {
 .btns button svg {
   background: transparent;
   pointer-events: none;
+}
+
+
+
+/* MEDIA  */
+
+@media screen and (min-width: 280px) {
+  .about, .projects {
+    /* padding: 0;
+    margin: 0; */
+  }
 }
