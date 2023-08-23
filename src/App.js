@@ -1,14 +1,22 @@
 import './App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope, faEye, faCode } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope, faEye, faCode, faBars } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faLinkedin, faHtml5, faCss3, faSquareJs, faReact, faGitAlt, faNpm } from '@fortawesome/free-brands-svg-icons'
 import laptop from './laptop.webp'
 import SteamImg from './Images/SteamClone.png'
 import LeagueImg from './Images/LeagueOfLegends.png'
 import WaldoImg from './Images/WheresWaldo.png'
 import FalloutImg from './Images/FalloutMemoryCard.png'
+import { useState } from 'react';
 
 function App() {
+  const [toggle, setToggle] = useState(false)
+
+  const toggleMenu = () => {
+    setToggle(prev => !prev)
+
+  }
+
   return (
     <div className="App">
       <nav>
@@ -18,11 +26,17 @@ function App() {
           <li>Skills</li>
           <li>Projects</li>
           <div>
-            <li><FontAwesomeIcon icon={faGithub} style={{color: 'white'}} size='lg' /></li>
-            <li><FontAwesomeIcon icon={faLinkedin} style={{color: '#0072b1'}} size='lg' /></li>
-            <li><FontAwesomeIcon icon={faEnvelope}  style={{color: 'white'}} size='lg' /></li>
+            <li><a href='https://github.com/Khrononian' rel='noreferrer' target='_blank'><FontAwesomeIcon icon={faGithub} style={{color: 'white'}} size='lg' /></a></li>
+            <li><a href='' rel='noreferrer' target='_blank'><FontAwesomeIcon icon={faLinkedin} style={{color: '#0072b1'}} size='lg' /></a></li>
+            <li><a href='mailto:Alv.Barnes@gmail.com' rel='noreferrer' target='_blank'><FontAwesomeIcon icon={faEnvelope}  style={{color: 'white'}} size='lg' /></a></li>
           </div>
         </ul>
+        {/* <FontAwesomeIcon onClick={toggleMenu} icon={faBars} style={{color: '#EAE7DC'}} size='2xl' className={`menu ${toggle === false ? '' : 'menu-animation'}`} /> */}
+        <div onClick={toggleMenu} className={`menu-blocks ${toggle === false ? '' : 'menu-animation'}`}>
+          <div className='one line'></div>
+          <div className='two line'></div>
+          <div className='three line'></div>
+        </div>
       </nav>
       <header>
         <h1>Hey, my name is <span>Alvin</span></h1>
