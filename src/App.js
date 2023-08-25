@@ -33,11 +33,26 @@ function App() {
         </ul>
         {/* <FontAwesomeIcon onClick={toggleMenu} icon={faBars} style={{color: '#EAE7DC'}} size='2xl' className={`menu ${toggle === false ? '' : 'menu-animation'}`} /> */}
         <div onClick={toggleMenu} className={`menu-blocks ${toggle === false ? '' : 'menu-animation'}`}>
-          <div className='one line'></div>
-          <div className='two line'></div>
-          <div className='three line'></div>
+          <div>
+            <input type='checkbox' />
+            <div className='one line'></div>
+            <div className='two line'></div>
+            <div className='three line'></div>
+          </div>
         </div>
+        
       </nav>
+      <ul className='menu-slide'>
+            <li><a href='' rel='noreferrer'>Home</a></li>
+            <li><a href='' rel='noreferrer'>About</a></li>
+            <li><a href='' rel='noreferrer'>Skills</a></li>
+            <li><a href='' rel='noreferrer'>Projects</a></li>
+            <div>
+              <li><a href='https://github.com/Khrononian' rel='noreferrer'><FontAwesomeIcon icon={faGithub} style={{color: 'white'}} size='lg' /></a></li>
+              <li><a href='' rel='noreferrer'><FontAwesomeIcon icon={faLinkedin} style={{color: '#0072b1'}} size='lg' /></a></li>
+              <li><a href='mailto:Alv.Barnes@gmail.com' rel='noreferrer'><FontAwesomeIcon icon={faEnvelope}  style={{color: 'white'}} size='lg' /></a></li>
+            </div>
+          </ul>
       <header>
         <h1>Hey, my name is <span>Alvin</span></h1>
         <h2>Frontend Developer</h2>
