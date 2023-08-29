@@ -1,6 +1,6 @@
 import './App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope, faEye, faCode, faBars } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope, faEye, faCode } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faLinkedin, faHtml5, faCss3, faSquareJs, faReact, faGitAlt, faNpm } from '@fortawesome/free-brands-svg-icons'
 import laptop from './laptop.webp'
 import SteamImg from './Images/SteamClone.png'
@@ -14,17 +14,16 @@ function App() {
 
   const toggleMenu = () => {
     setToggle(prev => !prev)
-
   }
 
   return (
     <div className="App">
       <nav>
-        <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Skills</li>
-          <li>Projects</li>
+        <ul className='top-menu'>
+          <li><a href='#home' rel='noreferrer'>Home</a></li>
+          <li><a href='#about' rel='noreferrer'>About</a></li>
+          <li><a href='#skills' rel='noreferrer'>Skills</a></li>
+          <li><a href='#projects' rel='noreferrer'>Projects</a></li>
           <div>
             <li><a href='https://github.com/Khrononian' rel='noreferrer' target='_blank'><FontAwesomeIcon icon={faGithub} style={{color: 'white'}} size='lg' /></a></li>
             <li><a href='' rel='noreferrer' target='_blank'><FontAwesomeIcon icon={faLinkedin} style={{color: '#0072b1'}} size='lg' /></a></li>
@@ -38,27 +37,33 @@ function App() {
             <div className='one line'></div>
             <div className='two line'></div>
             <div className='three line'></div>
+            
           </div>
         </div>
-        
+        <ul className={`menu-slide${!toggle ? '' : ' push'}`}>
+          <li><a href='#home' rel='noreferrer'>Home</a></li>
+          <li><a href='#about' rel='noreferrer'>About</a></li>
+          <li><a href='#skills' rel='noreferrer'>Skills</a></li>
+          <li><a href='#projects' rel='noreferrer'>Projects</a></li>
+        </ul>
       </nav>
-      <ul className='menu-slide'>
-            <li><a href='' rel='noreferrer'>Home</a></li>
-            <li><a href='' rel='noreferrer'>About</a></li>
-            <li><a href='' rel='noreferrer'>Skills</a></li>
-            <li><a href='' rel='noreferrer'>Projects</a></li>
-            <div>
-              <li><a href='https://github.com/Khrononian' rel='noreferrer'><FontAwesomeIcon icon={faGithub} style={{color: 'white'}} size='lg' /></a></li>
-              <li><a href='' rel='noreferrer'><FontAwesomeIcon icon={faLinkedin} style={{color: '#0072b1'}} size='lg' /></a></li>
-              <li><a href='mailto:Alv.Barnes@gmail.com' rel='noreferrer'><FontAwesomeIcon icon={faEnvelope}  style={{color: 'white'}} size='lg' /></a></li>
-            </div>
-          </ul>
-      <header>
+      {/* <ul className={`menu-slide${!toggle ? '' : ' push'}`}>
+        <li><a href='' rel='noreferrer'>Home</a></li>
+        <li><a href='' rel='noreferrer'>About</a></li>
+        <li><a href='' rel='noreferrer'>Skills</a></li>
+        <li><a href='' rel='noreferrer'>Projects</a></li>
+        <div>
+          <li><a href='https://github.com/Khrononian' rel='noreferrer'><FontAwesomeIcon icon={faGithub} style={{color: 'white'}} size='lg' /></a></li>
+          <li><a href='' rel='noreferrer'><FontAwesomeIcon icon={faLinkedin} style={{color: '#0072b1'}} size='lg' /></a></li>
+          <li><a href='mailto:Alv.Barnes@gmail.com' rel='noreferrer'><FontAwesomeIcon icon={faEnvelope}  style={{color: 'white'}} size='lg' /></a></li>
+        </div>
+      </ul> */}
+      <header id='home'>
         <h1>Hey, my name is <span>Alvin</span></h1>
         <h2>Frontend Developer</h2>
       </header>
-      <main>
-        <div className='about sub'>
+      <main >
+        <div className='about sub' id='about'>
           <h2>About Me</h2>
           <div>
             <p>I'm a self-taught Front End Developer looking to expand my horizons. The first time I started anything coding related was in middle school on a site called Roblox. From my middle school years until my freshman year of high school, I would code games on Roblox in the language of Lua. A year and a half after graduating I decided to get back into coding but in a different field. From there, I found the Odin Project which became one of the many ways to dive deeper into coding. Aside from coding, I am a gamer, rollerblading and spending time with my cat.</p>
@@ -66,7 +71,7 @@ function App() {
           </div>
           
         </div>
-        <div className='tech sub'>
+        <div className='tech sub' id='skills'>
           <h2>Technologies</h2>
             <div className='tech-div'>
               <div>
@@ -86,7 +91,7 @@ function App() {
               </div>
             </div>
         </div>
-        <div className='projects sub'>
+        <div className='projects sub' id='projects'>
           <h2>Projects</h2>
             <div className='inner-project'>
               
