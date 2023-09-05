@@ -26,7 +26,7 @@ function App() {
           <li><a href='#projects' rel='noreferrer'>Projects</a></li>
           <div>
             <li><a href='https://github.com/Khrononian' rel='noreferrer' target='_blank'><FontAwesomeIcon icon={faGithub} style={{color: 'white'}} size='lg' /></a></li>
-            <li><a href='' rel='noreferrer' target='_blank'><FontAwesomeIcon icon={faLinkedin} style={{color: '#0072b1'}} size='lg' /></a></li>
+            {/* <li><a href='' rel='noreferrer' target='_blank'><FontAwesomeIcon icon={faLinkedin} style={{color: '#0072b1'}} size='lg' /></a></li> */}
             <li><a href='mailto:Alv.Barnes@gmail.com' rel='noreferrer' target='_blank'><FontAwesomeIcon icon={faEnvelope}  style={{color: 'white'}} size='lg' /></a></li>
           </div>
         </ul>
