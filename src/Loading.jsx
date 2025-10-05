@@ -1,15 +1,14 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHexagon } from '@fortawesome/free-solid-svg-icons'
+import { faCircleNodes } from '@fortawesome/free-solid-svg-icons'
 
 const Loading = () => {
   return (
     <div>
-        <h1>Food</h1>
         <div>
-            <FontAwesomeIcon icon={faHexagon} />
-            <FontAwesomeIcon icon={faHexagon} />
-            <FontAwesomeIcon icon={faHexagon} />
+            <FontAwesomeIcon icon={faCircleNodes} />
+            <FontAwesomeIcon icon={faCircleNodes} />
+            <FontAwesomeIcon icon={faCircleNodes} />
         </div>
         <div>
             <span></span>
