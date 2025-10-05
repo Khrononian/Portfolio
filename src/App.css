@@ -1,42 +1,72 @@
 #root {
-  max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
+  width: 100%;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+nav {
+  /* background: grey; */
+  
+  padding: .05em;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+nav ul, .header-list {
+  display: flex;
+  justify-content: right;
+  flex-direction: row;
+  list-style-type: none;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav ul li {
+  margin-right: 2em;
+  cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background: purple;
+  min-height: 100vh;
+}
+header h1 {
+  font-size: 6rem;
+  font-weight: 900;
+  margin: 0;
+}
+header h2 {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+header div {
+  margin: 0 auto;
+}
+header div h4 {
+  font-size: 1.5rem;
+}
+.header-list {
+  justify-content: space-evenly;
+  width: 100%;
+  max-width: 700px;
+  padding-left: 0;
+}
+.header-list li {
+  background: #dc143c;
+  border-radius: 50px;
+  padding: .3em .7em;
+  margin-right: .4em;
 }
 
-.card {
-  padding: 2em;
+section {
+  padding: 4em;
+}
+section h2 {
+  font-size: 2.5rem;
 }
 
-.read-the-docs {
-  color: #888;
+.about, .projects {
+  text-align: left;
 }
+.about p {
+  font-size: 1.1rem;
+}
+
