@@ -1,5 +1,8 @@
 import { useState } from 'react'
 import Loading from './Loading'
+import About from './Components/About'
+import Projects from './Components/Projects'
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSquareGithub, faSquareLinkedin, faHtml5, faCss3Alt, faJs, faReact, faGitAlt,  } from '@fortawesome/free-brands-svg-icons'
 import { faGears, faDesktop, faFire, faFilePdf, faEnvelope } from '@fortawesome/free-solid-svg-icons'
@@ -57,7 +60,7 @@ function App() {
           <p><FontAwesomeIcon icon={faEnvelope} /><span>Alv.Barnes@gmail.com</span></p>
         </div>
       </header>
-      <section className='about'>
+      {/* <section className='about'>
         <h2>About</h2>
         <p>My name is Alvin Barnes. I'm a frontend developer born and raised in Miami, Florida, where I developed a fondness for creativity and problem-solving. When I was
         a teenager, I experimented with coding by making multiple games on Roblox from a wide variety of different themes I'd see offline or online. As I got older, I fell off
@@ -70,8 +73,9 @@ function App() {
         <p>What excites me about the tech industry is the constant innovation in how we interact with the digital world. It's never-ending, and as a frontend developer, I aim to 
         build applications that are user-friendly, accessible, and visually engaging. I want my work to not only be impactful, but also for people to use and truly enjoy it.
         </p>
-      </section>
-      <section className='projects'>
+      </section> */}
+      <About />
+      {/* <section className='projects'>
         <h2>Projects</h2>
         <div>
           <div>
@@ -96,25 +100,12 @@ function App() {
             <img src={waldo} alt='Waldo'/>
             <h3>Where's Waldo</h3>
             <p>A simple interactive app where users search for hidden characters within images.</p>
-            <p>CSS - JavaScript</p>
+            <p>JavaScript</p>
           </div>
         </div>
-      </section>
-      <section>
-        <h2>Skills & Tools</h2>
-        <div>
-          <ul>
-            <li><FontAwesomeIcon icon={faHtml5} /><p>HTML5</p></li>
-            <li><FontAwesomeIcon icon={faCss3Alt} /><p>CSS3</p></li>
-            <li><FontAwesomeIcon icon={faJs} /><p>JavaScript</p></li>
-            <li><FontAwesomeIcon icon={faReact} /><p>React</p></li>
-            <li><FontAwesomeIcon icon={faGitAlt} /><p>Git</p></li>
-            <li><FontAwesomeIcon icon={faGears} /><p>REST APIs</p></li>
-            <li><FontAwesomeIcon icon={faDesktop} /><p>Responsive Design</p></li>
-            <li><FontAwesomeIcon icon={faFire} /><p>Firebase</p></li>
-          </ul>
-        </div>
-      </section>
+      </section> */}
+      <Projects />
+      
       <section>
         <h2>Let's connect - I'd love to hear from you.</h2>
         <div>
