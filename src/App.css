@@ -50,9 +50,9 @@ header div h4 {
   padding-left: 0;
 }
 .header-list li {
-  background: #dc143c;
+  background: #dc143cc7;
   border-radius: 50px;
-  padding: .3em .7em;
+  padding: .2em .6em;
   margin-right: .4em;
 }
 

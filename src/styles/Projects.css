@@ -1,0 +1,31 @@
+.projects {
+    background: grey
+}
+.project-container {
+    display: grid;
+}
+.projects div img {
+    width: 550px;
+    max-width: 100%;
+}
+.card {
+    width: 550px;
+    background: green;
+}
+.card > *:not(:first-child) {
+    padding: 1.2em;
+}
+.card div h3, .card div p:last-child {
+    margin: 0;
+    /* margin-bottom: .5em; */
+}
+.card div p {
+    margin: 1.1em 0
+}
+.card div span {
+    /* background: #dc143c; */
+    background: #dc143cc7;
+    padding: .2em .6em;
+    border-radius: 50px;
+    margin-right: .5em;
+}
