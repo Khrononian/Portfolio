@@ -54,7 +54,7 @@ function App() {
           </ul>
         </div>
         <div>
-          <FontAwesomeIcon icon={faSquareGithub} size='xl' style={{color: '#dc143c'}} />
+          <FontAwesomeIcon icon={faSquareGithub} size='xl' style={{color: '#dc143cc7'}} />
           <FontAwesomeIcon icon={faSquareLinkedin} />
           <FontAwesomeIcon icon={faFilePdf} />
           <p><FontAwesomeIcon icon={faEnvelope} /><span>Alv.Barnes@gmail.com</span></p>
