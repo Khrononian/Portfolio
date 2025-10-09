@@ -1,7 +1,13 @@
+@font-face {
+  font-family: 'Chillax';
+  src: url('./fonts/Chillax_Complete/Fonts/WEB/fonts/Chillax-Regular.ttf')
+}
+
 #root {
   margin: 0 auto;
   text-align: center;
   width: 100%;
+  background: #101820;
 }
 
 nav {
@@ -24,7 +30,7 @@ header {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background: purple;
+  /* background: #2A3132; */
   min-height: 100vh;
 }
 header h1 {

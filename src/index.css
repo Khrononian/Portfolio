@@ -1,5 +1,10 @@
+/* @font-face {
+  font-family: 'Chillax';
+  src: url('./fonts/Chillax_Complete/Fonts/WEB/fonts/Chillax-Regular.ttf')
+} */
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  /* font-family: system-ui, Avenir, Helvetica, Arial, sans-serif; */
+  font-family: 'Chillax';
   line-height: 1.5;
   font-weight: 400;
 

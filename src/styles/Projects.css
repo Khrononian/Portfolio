@@ -4,13 +4,15 @@
 .project-container {
     display: grid;
 }
-.projects div img {
-    width: 550px;
-    max-width: 100%;
-}
 .card {
+    /* width: 550px; */
     width: 550px;
+    max-width: fit-content;
     background: green;
+}
+.card img {
+    width: 100%;
+    object-fit: cover;
 }
 .card > *:not(:first-child) {
     padding: 1.2em;
