@@ -1,18 +1,29 @@
 .projects {
-    background: grey
+    /* background: #6e6e6e; */
+    /* background: #1a2238; */
+    /* background: #1f3044; */
+    background: #000000;
 }
 .project-container {
     display: grid;
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-columns: repeat(auto-fill, 600px);
+    justify-content: center;
+    column-gap: 20px;
+    row-gap: 7em;
 }
 .card {
+    /* width: 90%; */
     /* width: 550px; */
-    width: 550px;
     max-width: fit-content;
-    background: green;
+    background: #2e0003;
+    border-radius: 20px;
 }
 .card img {
     width: 100%;
     object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 .card > *:not(:first-child) {
     padding: 1.2em;
@@ -25,9 +36,14 @@
     margin: 1.1em 0
 }
 .card div span {
-    /* background: #dc143c; */
-    background: #dc143cc7;
-    padding: .2em .6em;
-    border-radius: 50px;
+    background: #b3000c;
+    /* background: #dc143cc7; */
+    padding: .2em .7em;
     margin-right: .5em;
+}
+.card div a {
+    background: #b3000c;
+    padding: .4em 1em;
+    color: white;
+    cursor: pointer;
 }
