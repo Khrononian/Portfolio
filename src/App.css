@@ -70,6 +70,10 @@ section h2 {
   font-size: 2.5rem;
 }
 
+.about {
+  width: 737px;
+  margin: 0 auto;
+}
 .about, .projects {
   text-align: left;
 }
