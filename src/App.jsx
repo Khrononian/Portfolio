@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSquareGithub, faSquareLinkedin, faHtml5, faCss3Alt, faJs, faReact, faGitAlt,  } from '@fortawesome/free-brands-svg-icons'
 import { faGears, faDesktop, faFire, faFilePdf, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
-import './App.css'
+import './styles/App.css'
 
 function App() {
 
@@ -37,11 +37,11 @@ function App() {
             <li>CSS</li>
           </ul>
         </div>
-        <div>
-          <FontAwesomeIcon icon={faSquareGithub} size='xl' style={{color: '#dc143cc7'}} />
-          <FontAwesomeIcon icon={faSquareLinkedin} style={{color: '#b3000c'}}/>
-          <FontAwesomeIcon icon={faFilePdf} />
-          <p><FontAwesomeIcon icon={faEnvelope} /><span>Alv.Barnes@gmail.com</span></p>
+        <div className='socials'>
+          <a href='' target='_blank'><FontAwesomeIcon icon={faSquareGithub}  style={{color: '#b3000c'}} /></a> 
+          <a href='' target='_blank'><FontAwesomeIcon icon={faSquareLinkedin}  style={{color: '#b3000c'}}/></a> 
+          <a href='' target='_blank'><FontAwesomeIcon icon={faFilePdf}  style={{color: '#b3000c'}} /></a> 
+          {/* <p><FontAwesomeIcon icon={faEnvelope} /><span>Alv.Barnes@gmail.com</span></p> */}
         </div>
       </header>
       <About />
