@@ -1,0 +1,15 @@
+.about {
+    background: #2e0003;
+    text-align: left;
+    /* width: 737px; */
+    
+    width: auto;
+    margin: 0 auto;
+}
+
+.about p {
+  font-size: 1.1rem;
+}
+.about-inner {
+    max-width: 737px;
+}
