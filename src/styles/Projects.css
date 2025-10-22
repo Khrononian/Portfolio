@@ -1,9 +1,9 @@
 .projects {
-    /* background: #6e6e6e; */
-    /* background: #1a2238; */
-    /* background: #1f3044; */
-    background: #000000;
     text-align: left;
+    padding-top: 2em;
+}
+.projects h2 {
+    margin-bottom: 2.5em;
 }
 .project-container {
     display: grid;
