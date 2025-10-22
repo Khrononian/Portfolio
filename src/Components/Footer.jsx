@@ -2,7 +2,7 @@ import React from 'react'
 import '../styles/Footer.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-const Footer = ({ faSquareGithub, faSquareLinkedin }) => {
+const Footer = ({ github, linkedin, email }) => {
   return (
     <footer>
         <h2>Let's connect - I'd love to hear from you.</h2>
@@ -11,8 +11,9 @@ const Footer = ({ faSquareGithub, faSquareLinkedin }) => {
           <div>
             <p>Find me in these spaces too</p>
             <ul>
-              <li><FontAwesomeIcon icon={faSquareGithub} size='xl' style={{color: '#dc143cc7'}} /></li>
-              <li><FontAwesomeIcon icon={faSquareLinkedin} size='xl' style={{color: '#dc143cc7'}} /></li>
+              <li><a href='' target='_blank'><FontAwesomeIcon icon={github}  /></a></li>
+              <li><a href='' target='_blank'><FontAwesomeIcon icon={linkedin}  /></a></li>
+              <li><a href='' target='_blank'><FontAwesomeIcon icon={email}  /></a></li>
             </ul>
           </div>
         </div>

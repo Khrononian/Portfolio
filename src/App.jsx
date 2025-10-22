@@ -17,9 +17,9 @@ function App() {
       <nav>
         <ul>
           <li>About</li>
-          <li>Experience</li>
           <li>Projects</li>
           <li>Contact</li>
+          <li><a href='' target='_blank'>Resume</a></li>
         </ul>
       </nav>
       <header>
@@ -37,16 +37,23 @@ function App() {
             <li>CSS</li>
           </ul>
         </div>
-        <div className='socials'>
-          <a href='' target='_blank'><FontAwesomeIcon icon={faSquareGithub}  style={{color: '#b3000c'}} /></a> 
-          <a href='' target='_blank'><FontAwesomeIcon icon={faSquareLinkedin}  style={{color: '#b3000c'}}/></a> 
-          <a href='' target='_blank'><FontAwesomeIcon icon={faFilePdf}  style={{color: '#b3000c'}} /></a> 
-          {/* <p><FontAwesomeIcon icon={faEnvelope} /><span>Alv.Barnes@gmail.com</span></p> */}
+        <div className='socials-list'>
+          <ul>
+            <li><a href='' target='_blank'><FontAwesomeIcon icon={faSquareGithub} /></a></li>
+            <li><a href='' target='_blank'><FontAwesomeIcon icon={faSquareLinkedin} /></a> </li>
+            <li><a href='' className='last-link'><FontAwesomeIcon icon={faEnvelope} /></a></li>
+          </ul>
+           
+          
         </div>
       </header>
       <About />
       <Projects />
-      <Footer github={faSquareGithub} linkedin={faSquareLinkedin} />
+      <Footer 
+      github={faSquareGithub} 
+      linkedin={faSquareLinkedin} 
+      email={faEnvelope}
+      />
     </main>
   )
 }
