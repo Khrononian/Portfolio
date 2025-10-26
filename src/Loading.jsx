@@ -5,14 +5,11 @@ import './styles/LoadingPage.css'
 
 const Loading = () => {
   return (
-    <div>
+    <div className='loading-page'>
         <div>
             <FontAwesomeIcon icon={faCircleNodes} />
             <FontAwesomeIcon icon={faCircleNodes} />
             <FontAwesomeIcon icon={faCircleNodes} />
-        </div>
-        <div>
-            <span></span>
         </div>
     </div>
   )
