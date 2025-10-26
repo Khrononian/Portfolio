@@ -5,7 +5,7 @@ import Projects from './Components/Projects'
 import Footer from './Components/Footer'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSquareGithub, faSquareLinkedin, faHtml5, faCss3Alt, faJs, faReact, faGitAlt,  } from '@fortawesome/free-brands-svg-icons'
-import { faGears, faDesktop, faFire, faFilePdf, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faGears, faDesktop, faFire, faFilePdf, faEnvelope, faCode } from '@fortawesome/free-solid-svg-icons'
 
 import './styles/App.css'
 
@@ -24,7 +24,12 @@ function App() {
       </nav>
       <header>
         <h1>Alvin Barnes</h1>
-        <h2>Frontend Developer</h2>
+        <div className='header-name'>
+          <h2>Frontend Developer</h2>
+          <FontAwesomeIcon  icon={faCode} />
+        </div>
+        
+        
         <div>
           <h4>Skills</h4>
           <ul className='header-list'>
