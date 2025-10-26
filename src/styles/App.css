@@ -15,6 +15,7 @@ main {
 nav {
   background: #0F0F0F;
   padding: .05em;
+  font-size: 1.3rem;
 }
 nav ul, .header-list {
   display: flex;
@@ -23,7 +24,7 @@ nav ul, .header-list {
   list-style-type: none;
 }
 nav ul li {
-  margin-right: 2em;
+  margin-right: 1.5em;
   cursor: pointer;
 }
 
@@ -44,10 +45,30 @@ header h1 {
 header h2 {
   font-size: 3rem;
   font-weight: 500;
-  margin-bottom: 0;
+  margin: 0;
 }
 header div {
   margin: 0 auto;
+}
+.header-name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 520px;
+  /* background: red; */
+}
+.header-name svg {
+  font-size: 2.2rem;
+  animation: bounce .9s ease-in ;
+}
+ @keyframes bounce {
+  0% {transform: translateX(0%); animation-timing-function: ease-out}
+  25% {transform: translateX(100%)}
+  50% {transform: translateX(0%); animation-timing-function: ease}
+  70% {transform: translateX(25%)}
+  80% {transform: translateX(0%)}
+  90% {transform: translateX(12%)}
+  100% {transform: translateX(0%)}
 }
 .socials-list ul {
   display: flex;
