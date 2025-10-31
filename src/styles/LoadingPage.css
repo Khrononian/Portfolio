@@ -3,6 +3,7 @@
     /* position: absolute; */
     width: 100%;
     /* background: red; */
+    overflow: hidden;
 }
 .loading-page div {
     display: flex;
@@ -16,32 +17,57 @@
 }
 .loading-page div svg:first-child {
     /* transform: rotate(80deg); */
-    transform-origin: top left;
     align-self: center;
+    transform-origin: center center;
+    position: absolute;
     animation: left 1.7s ease forwards;
 }
 .loading-page div svg:nth-child(2) {
     transform: rotate(20deg);
+    transform-origin: center center;
+    position: absolute;
     animation: middle 1.7s ease forwards;
 }
 .loading-page div svg:last-child {
     transform: rotate(80deg);
     align-self: center;
+    transform-origin: center center;
+    position: absolute;
     animation: right 1.7s ease forwards;
+}
+.orbit {
+    position: absolute;
+    transform-origin: center center;
+    animation: orbit 3.5s ease-in-out forwards 1.5s;
 }
 
 @keyframes left {
-    0% {transform: translate(0, 0) rotate(80deg);  }
-    10% {transform: translate(200px, 0) rotate(80deg) ; }
-    100% {transform: translate(415px, 0) rotate(80deg) ; }
+    0% {top: 50%; left: 50%; transform: translate(-1600%, 10%) rotate(80deg); }
+    /* 10% {transform: translate(200px, 0) rotate(80deg) ; } */
+    /* 10% {top: 50%; left: 50%; transform: translate(-900%, 10%) rotate(80deg) ; } */
+    /* 25% {transform: translate(475px, 0) rotate(80deg)} */
+
+    /* 100% {transform: translate(475px, 0) rotate(80deg) ; } */
+
+    100% {top: 50%; left: 50%; transform: translate(-70%, 10%) rotate(80deg); }
+    /* 100% {top: 50%; left: 50%; transform: translate(-1600%, 10%) rotate(80deg) ; } */
 }
 @keyframes middle {
-    0% {transform: translate(0, 0) rotate(20deg);  }
-    10% {transform: translate(0, 200px) rotate(20deg) ; }
-    100% {transform: translate(0, 420px) rotate(20deg) ; }
+    0% {top: 50%; left: 50%; transform: translate(1%, -2720%) rotate(20deg); }
+
+    100% {top: 50%; left: 50%; transform: translate(1%, -130%) rotate(20deg); }
+    /* 100% {top: 50%; left: 50%; transform: translate(1%, -2720%) rotate(20deg) ; } */
 }
 @keyframes right {
-    0% {transform: translate(0, 5px) rotate(80deg);  }
-    10% {transform: translate(-200px, 5px) rotate(80deg) ; }
-    100% {transform: translate(-390px, 4px) rotate(80deg) ; }
+    0% {top: 50%; right: 50%; transform: translate(1400%, 10%) rotate(80deg); }
+
+    100% {top: 50%; right: 50%; transform: translate(170%, 10%) rotate(80deg); }
+    /* 100% {top: 50%; right: 50%; transform: translate(1400%, 10%) rotate(80deg) ; } */
+}
+@keyframes orbit {
+    0% {transform: rotate(0deg);}
+    /* 25% {transform: rotate(360deg)}
+    50% {transform: rotate(720deg);}
+    75% {transform: rotate(1080deg);} */
+    100% {transform: rotate(2160deg); }
 }

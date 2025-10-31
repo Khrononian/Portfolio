@@ -14,6 +14,7 @@ main {
 }
 nav {
   background: #0F0F0F;
+  /* background: red; */
   padding: .05em;
   font-size: 1.3rem;
 }
@@ -38,12 +39,14 @@ header {
   min-height: 100vh;
 }
 header h1 {
-  font-size: 6rem;
+  /* font-size: 6rem; */
+  font-size: clamp(3rem, 16vw, 6rem);
   font-weight: 900;
   margin: 0;
 }
 header h2 {
-  font-size: 3rem;
+  /* font-size: 3rem; */
+  font-size: clamp(2.2rem, 5.2vw, 3rem);
   font-weight: 500;
   margin: 0;
 }
@@ -51,14 +54,18 @@ header div {
   margin: 0 auto;
 }
 .header-name {
+  
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 520px;
+  /* width: 520px; */
+  /* width: 420px; */
+  width: clamp(390px, 60vw, 520px);
   /* background: red; */
 }
 .header-name svg {
-  font-size: 2.2rem;
+  /* font-size: 2.2rem; */
+  font-size: clamp(.5rem, 6vw, 2.2rem);
   animation: bounce .9s ease-in ;
 }
  @keyframes bounce {
