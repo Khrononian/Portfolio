@@ -28,8 +28,6 @@ function App() {
           <h2>Frontend Developer</h2>
           <FontAwesomeIcon  icon={faCode} />
         </div>
-        
-        
         <div>
           <h4>Skills</h4>
           <ul className='header-list'>
