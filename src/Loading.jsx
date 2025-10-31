@@ -6,7 +6,7 @@ import './styles/LoadingPage.css'
 const Loading = () => {
   return (
     <div className='loading-page'>
-        <div>
+        <div className='orbit'>
             <FontAwesomeIcon icon={faCircleNodes} />
             <FontAwesomeIcon icon={faCircleNodes} />
             <FontAwesomeIcon icon={faCircleNodes} />
