@@ -1,15 +1,61 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircleNodes } from '@fortawesome/free-solid-svg-icons'
 import './styles/LoadingPage.css'
 
 const Loading = () => {
+  
+  // orbit.addEventListener('animationend', () => {
+  //   const nav = document.getElementsByName('nav');
+
+  //   nav.appendChild(orbit)
+  // })
+  useEffect(() => {
+    const orbit = document.querySelector('.orbit');
+    const nav = document.getElementsByTagName('nav');
+    const loadingPage = document.querySelector('.loading-page')
+    const left = document.getElementsByTagName('.left');
+    const middle = document.getElementsByTagName('.middle');
+    const right = document.getElementsByTagName('.right');
+    console.log(orbit, nav[0], left)
+
+    orbit.addEventListener('animationend', (element) => {
+      console.log('FIRST', element)
+      setTimeout(() => {
+        if (element.animationName == 'orbit') {
+          console.log('NEW')
+          nav[0].prepend(orbit)
+          loadingPage.remove()
+          orbit.classList.remove('initial-orbit')
+          for (let i = 0; i < orbit.children.length; i++) {
+            if (orbit.children[i].classList.contains('left')) {
+              
+              orbit.children[i].classList.add('left-stats')
+              
+              console.log(orbit.children[i])
+            }
+            if (orbit.children[i].classList.contains('middle')) {
+              orbit.children[i].classList.add('middle-stats')
+              
+            }
+            if (orbit.children[i].classList.contains('right')) {
+              orbit.children[i].classList.add('right-stats')
+              
+            }
+          }
+        }
+      // }, 950)
+      }, 10000)
+      
+    })
+  }, [])
+
   return (
     <div className='loading-page'>
-        <div className='orbit'>
-            <FontAwesomeIcon icon={faCircleNodes} />
-            <FontAwesomeIcon icon={faCircleNodes} />
-            <FontAwesomeIcon icon={faCircleNodes} />
+        <div className='orbit initial-orbit'>
+            <FontAwesomeIcon className='left' icon={faCircleNodes} />
+            <FontAwesomeIcon className='middle' icon={faCircleNodes} />
+            <FontAwesomeIcon className='right' icon={faCircleNodes} />
         </div>
     </div>
   )
