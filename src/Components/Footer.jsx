@@ -11,7 +11,7 @@ const Footer = ({ github, linkedin, email }) => {
           <div>
             <p>Find me in these spaces too</p>
             <ul>
-              <li><a href='' target='_blank'><FontAwesomeIcon icon={github}  /></a></li>
+              <li><a href='https://github.com/Khrononian' target='_blank'><FontAwesomeIcon icon={github}  /></a></li>
               <li><a href='' target='_blank'><FontAwesomeIcon icon={linkedin}  /></a></li>
               <li><a href='' target='_blank'><FontAwesomeIcon icon={email}  /></a></li>
             </ul>
