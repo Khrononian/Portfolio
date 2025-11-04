@@ -42,7 +42,7 @@ function App() {
         </div>
         <div className='socials-list'>
           <ul>
-            <li><a href='' target='_blank'><FontAwesomeIcon icon={faSquareGithub} /></a></li>
+            <li><a href='https://github.com/Khrononian' target='_blank'><FontAwesomeIcon icon={faSquareGithub} /></a></li>
             <li><a href='' target='_blank'><FontAwesomeIcon icon={faSquareLinkedin} /></a> </li>
             <li><a href='' className='last-link'><FontAwesomeIcon icon={faEnvelope} /></a></li>
           </ul>
