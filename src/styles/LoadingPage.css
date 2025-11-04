@@ -1,6 +1,27 @@
+.left-stats {
+    /* position: absolute; */
+    transform: rotate(80deg);
+    align-self: center;
+    transform: translate(30%, 180%) rotate(80deg);
+    animation: soft-float-left 7s ease-in-out infinite 7s;
+}
+.middle-stats {
+    /* position: absolute; */
+    transform: rotate(20deg);
+    transform: translate(0%, 50%) rotate(20deg);
+    animation: soft-float-middle 7s ease-in-out infinite 7s;
+}
+.right-stats {
+    /* position: absolute; */
+    transform: rotate(80deg);
+    align-self: center;
+    transform: translate(-30%, 180%) rotate(80deg);
+    animation: soft-float-right 7s ease-in-out infinite 7s;
+}
+
 .loading-page {
     min-height: 100vh;
-    /* position: absolute; */
+    position: absolute;
     width: 100%;
     /* background: red; */
     overflow: hidden;
@@ -10,34 +31,38 @@
     justify-content: space-between;
     width: 100%;
     min-height: inherit;
-    
 }
 .loading-page div svg {
     font-size: 1.5rem;
 }
 .loading-page div svg:first-child {
-    /* transform: rotate(80deg); */
+    transform: rotate(80deg);
     align-self: center;
     transform-origin: center center;
     position: absolute;
-    animation: left 1.7s ease forwards;
+    animation: left 1.7s ease forwards, transfer-left .5s linear forwards 5.4s, soft-float-left 7s ease-in-out infinite 6s;
 }
 .loading-page div svg:nth-child(2) {
     transform: rotate(20deg);
     transform-origin: center center;
     position: absolute;
-    animation: middle 1.7s ease forwards;
+    /* animation: middle 1.7s ease forwards, transfer-middle 1.7s linear forwards; */
+    animation: middle 1.7s ease forwards, transfer-middle .5s linear forwards 5.4s, soft-float-middle 7s ease-in-out infinite 6s;
 }
 .loading-page div svg:last-child {
     transform: rotate(80deg);
     align-self: center;
     transform-origin: center center;
     position: absolute;
-    animation: right 1.7s ease forwards;
+    animation: right 1.7s ease forwards, transfer-right 5.1s ease-in-out forwards 5.4s, soft-float-right 7s ease-in-out infinite 6s;
 }
 .orbit {
     position: absolute;
     transform-origin: center center;
+    /* background: red; */
+    z-index: 12;
+}
+.initial-orbit {
     animation: orbit 3.5s ease-in-out forwards 1.5s;
 }
 
@@ -52,22 +77,60 @@
     100% {top: 50%; left: 50%; transform: translate(-70%, 10%) rotate(80deg); }
     /* 100% {top: 50%; left: 50%; transform: translate(-1600%, 10%) rotate(80deg) ; } */
 }
+@keyframes transfer-left {
+    0% {top: 50%; left: 50%; transform: translate(-70%, 10%) rotate(80deg) scale(.85); }
+    100% {top: 50%; left: 50%; transform: translate(-1430%, -1740%) rotate(80deg) scale(.85);}
+    
+    /* 100% {top: 50%; left: 50%; transform: translate(30%, 180%) rotate(80deg);} */
+}
+
 @keyframes middle {
     0% {top: 50%; left: 50%; transform: translate(1%, -2720%) rotate(20deg); }
-
     100% {top: 50%; left: 50%; transform: translate(1%, -130%) rotate(20deg); }
-    /* 100% {top: 50%; left: 50%; transform: translate(1%, -2720%) rotate(20deg) ; } */
 }
+@keyframes transfer-middle {
+    0% {top: 50%; left: 50%; transform: translate(1%, -130%) rotate(20deg) scale(.85);}
+    5% {top: 50%; left: 50%; transform: translate(1%, -200%) rotate(20deg) scale(.85);}
+    
+     /* 100% {top: 50%; left: 50%; transform: translate(0%, 50%) rotate(20deg);} */
+}
+
 @keyframes right {
     0% {top: 50%; right: 50%; transform: translate(1400%, 10%) rotate(80deg); }
 
-    100% {top: 50%; right: 50%; transform: translate(170%, 10%) rotate(80deg); }
+    100% {top: 50%; right: 50%; transform: translate(165%, 10%) rotate(80deg) ; }
     /* 100% {top: 50%; right: 50%; transform: translate(1400%, 10%) rotate(80deg) ; } */
+}
+@keyframes transfer-right {
+     0% {top: 50%; right: 50%; transform: translate(170%, 10%) scale(1) rotate(80deg) ; }
+     5% {top: 50%; right: 50%; transform: translate(400%, 10%) rotate(80deg) ;}
+     15% {top: 50%; right: 50%; color: #dc143cc7; transform: translate(400%, 10%) scale(2.1) rotate(80deg) ;}
+     20% {top: 50%; right: 50%; transform: translate(400%, 10%) scale(1) rotate(80deg) ;}
+     25% {top: 50%; right: 50%; color: #dc143cc7; transform: translate(400%, 10%) scale(2.1) rotate(80deg) ;}
+     50% {top: 50%; right: 50%; opacity: 0; transform: translate(400%, 10%) scale(1) rotate(80deg);}
+     
+     /* 100% {top: 50%; right: 50%; transform: translate(-30%, 180%) rotate(80deg);} */
 }
 @keyframes orbit {
     0% {transform: rotate(0deg);}
     /* 25% {transform: rotate(360deg)}
     50% {transform: rotate(720deg);}
     75% {transform: rotate(1080deg);} */
-    100% {transform: rotate(2160deg); }
+    100% {transform: rotate(2520deg); }
 }
+
+/* @keyframes soft-float-left {
+    0% {top: 50%; left: 50%; transform: translate(30%, 180%) rotate(80deg);}
+    50% {top: 50%; left: 50%; transform: translate(30%, 150%) rotate(80deg);}
+    100% {top: 50%; left: 50%; transform: translate(30%, 180%) rotate(80deg);}
+}
+@keyframes soft-float-middle {
+    0% {top: 50%; left: 50%; transform: translate(0%, 50%) rotate(20deg);}
+    50% {top: 50%; left: 50%; transform: translate(0%, 20%) rotate(20deg);}
+    100% {top: 50%; left: 50%; transform: translate(0%, 50%) rotate(20deg);}
+}
+@keyframes soft-float-right {
+    0% {top: 50%; right: 50%; transform: translate(-30%, 180%) rotate(80deg);}
+    50% {top: 50%; right: 50%; transform: translate(-30%, 150%) rotate(80deg);}
+    100% {top: 50%; right: 50%; transform: translate(-30%, 180%) rotate(80deg);}
+} */

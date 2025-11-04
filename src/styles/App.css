@@ -13,8 +13,8 @@ main {
   background: #0F0F0F;
 }
 nav {
-  background: #0F0F0F;
-  /* background: red; */
+  /* background: #0F0F0F; */
+  background: red;
   padding: .05em;
   font-size: 1.3rem;
 }
