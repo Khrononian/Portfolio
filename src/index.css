@@ -17,6 +17,8 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* overflow-x: hidden; */
+  scrollbar-width: thin;
+  scrollbar-color: #dc143cc7 #0F0F0F;
 }
 
 a {
