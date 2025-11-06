@@ -4,22 +4,16 @@ import { faCircleNodes } from '@fortawesome/free-solid-svg-icons'
 import './styles/LoadingPage.css'
 
 const Loading = () => {
-  
-  // orbit.addEventListener('animationend', () => {
-  //   const nav = document.getElementsByName('nav');
-
-  //   nav.appendChild(orbit)
-  // })
   useEffect(() => {
     const orbit = document.querySelector('.orbit');
-    const nav = document.getElementsByTagName('nav');
     const loadingPage = document.querySelector('.loading-page')
-    const left = document.getElementsByTagName('.left');
-    const middle = document.getElementsByTagName('.middle');
-    const right = document.getElementsByTagName('.right');
-    console.log(orbit, nav[0], left)
-
+    const root = document.getElementById('root')
+    
+    root.parentElement.classList.add('hideScroll')
+    
     orbit.addEventListener('animationend', (element) => {
+      const nav = document.getElementsByTagName('nav');
+
       console.log('FIRST', element)
       setTimeout(() => {
         if (element.animationName == 'orbit') {
@@ -29,24 +23,18 @@ const Loading = () => {
           orbit.classList.remove('initial-orbit')
           for (let i = 0; i < orbit.children.length; i++) {
             if (orbit.children[i].classList.contains('left')) {
-              
+              console.log('WOY')
               orbit.children[i].classList.add('left-stats')
+              root.parentElement.classList.remove('hideScroll');
               
               console.log(orbit.children[i])
-            }
-            if (orbit.children[i].classList.contains('middle')) {
-              orbit.children[i].classList.add('middle-stats')
               
             }
-            if (orbit.children[i].classList.contains('right')) {
-              orbit.children[i].classList.add('right-stats')
-              
-            }
+            if (orbit.children[i].classList.contains('middle')) orbit.children[i].classList.add('middle-stats')
+            if (orbit.children[i].classList.contains('right')) orbit.children[i].classList.add('right-stats')
           }
         }
-      // }, 950)
-      }, 10000)
-      
+      }, 3000)
     })
   }, [])
 
