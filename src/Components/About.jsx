@@ -3,8 +3,8 @@ import '../styles/About.css'
 
 const About = () => {
   return (
-    <section className='about'>
-      <div className='about-inner'>
+    <section className='about fadeUp'>
+      <div className='about-inner '>
         <h2>About</h2>
         <p>My name is Alvin Barnes. I'm a frontend developer born and raised in Miami, Florida, where I developed a fondness for creativity and problem-solving. When I was
         a teenager, I experimented with coding by making multiple games on Roblox from a wide variety of different themes I'd see offline or online. As I got older, I fell off

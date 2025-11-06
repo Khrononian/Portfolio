@@ -4,8 +4,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Footer = ({ github, linkedin, email }) => {
   return (
-    <footer>
-        <h2>Let's connect - I'd love to hear from you.</h2>
+    <footer className='fadeUp'>
+        <h2>Available for opportunities!</h2>
         <div>
           <button>Get in touch</button>
           <div>
