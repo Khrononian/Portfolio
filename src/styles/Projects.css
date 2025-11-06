@@ -7,23 +7,23 @@
 }
 .project-container {
     display: grid;
-    /* grid-template-columns: repeat(auto-fill, 600px); */
-    grid-template-columns: repeat(auto-fill, 400px);
+    grid-template-columns: repeat(auto-fit, minmax(min(320px, 330px), 400px));
     justify-content: center;
     column-gap: 80px;
     row-gap: 5em;
 }
+.project-container a {
+    margin: 0 auto;
+}
 .card {
-    /* width: 90%; */
-    /* width: 550px; */
-    max-width: fit-content;
+    width: clamp(320px, 50vw, 430px);
+    height: 564.55px;
     background: #2e0003;
     border-radius: 20px;
     cursor: pointer;
     color: white;
     transition: transform .5s;
     animation-duration: .7s;
-    /* animation-iteration-count:; */
     animation-fill-mode: forwards;
 }
 .card:hover {
@@ -31,12 +31,7 @@
     animation-name: rotate;
     animation-timing-function: ease-in-out;
 }
-@keyframes rotate {
-    0% {rotate: 0turn;}
-    25% {rotate: .02turn;}
-    50% {rotate: -.02turn;}
-    75% {rotate: 0turn;}
-}
+
 .card img {
     width: 100%;
     object-fit: cover;
@@ -48,32 +43,38 @@
 }
 .card div h3, .card div p:last-child {
     margin: 0;
-    /* margin-bottom: .5em; */
 }
 .card div p {
     margin: 1.1em 0
 }
+.card div p:nth-child(2) {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 7px;
+}
 .card div span {
     background: #b3000c;
-    /* background: #dc143cc7; */
     padding: .2em .7em;
     margin-right: .5em;
-}
-.card div a {
-    /* background: #b3000c;
-    padding: .4em 1em; */
-    text-decoration: underline;
-    /* color: white; */
-    cursor: pointer;
-}
-.btn {
-    text-align: center;
 }
 .header-btn {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.header-btn a {
-    color: #b3000c ;
+
+.fadeUp {
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 1.8s ease;
+}
+.fadeUp.active {
+  transform: translateY(0px);
+  opacity: 1;
+}
+@keyframes rotate {
+    0% {rotate: 0turn;}
+    25% {rotate: .02turn;}
+    50% {rotate: -.02turn;}
+    75% {rotate: 0turn;}
 }

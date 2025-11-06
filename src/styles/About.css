@@ -1,14 +1,30 @@
+.about > * {
+  animation-timeline: view(auto);
+  animation: fadeInBottom 1.3s ease-in-out forwards 2s;
+}
 .about {
     text-align: left;
     /* width: 737px; */
-    
     width: auto;
     margin: 0 auto;
+    padding-top: 1em;
 }
 
 .about p {
-  font-size: 1.1rem;
+  /* font-size: 1.1rem; */
+  font-size: clamp(1.5vw, 3.8vw, 1.5rem);
 }
 .about-inner {
     max-width: 737px;
+}
+
+.fadeUp {
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 1.8s ease;
+  /* animation: fadeUpwards 1.3s ease forwards ; */
+}
+.fadeUp.active {
+  transform: translateY(0px);
+  opacity: 1;
 }
