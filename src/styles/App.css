@@ -11,14 +11,22 @@
 
 main {
   background: #0F0F0F;
+  
 }
+
 nav {
   /* background: #0F0F0F; */
-  background: red;
+  /* background: red; */
+  position: relative;
   padding: .05em;
   font-size: 1.3rem;
+  
 }
-nav ul, .header-list {
+nav .orbit > *, .hamburger-menu li a {
+  color: #E53935;
+  animation: colorGlow 2.8s ease-in-out infinite;
+}
+nav .main-list, .header-list {
   display: flex;
   justify-content: right;
   flex-direction: row;
@@ -28,25 +36,44 @@ nav ul li {
   margin-right: 1.5em;
   cursor: pointer;
 }
+nav ul li a {
+  /* color: #FF4A4A; */
+  color: #E53935;
+  /* color: #FF3030; */
+  /* color: #F55151; */
+  animation: colorGlow 2.8s ease-in-out infinite;
+}
+nav .menu {
+  display: none;
+  color: white;
+  cursor: pointer;
+}
+.menu-list {
+  display: none;
+}
+.menu-list ul li {
+  border-top: 1px solid #686868;
+  border-bottom: 1px solid #686868;
+}
 
 header {
   background: #0F0F0F;
-  /* background: #0a0a0a; */
   display: flex;
   justify-content: center;
   flex-direction: column;
-  /* background: #2A3132; */
   min-height: 100vh;
 }
 header h1 {
-  /* font-size: 6rem; */
   font-size: clamp(3rem, 16vw, 6rem);
   font-weight: 900;
   margin: 0;
 }
+header h1 span {
+  color: #E53935;
+  animation: colorGlow 2.8s ease-in-out infinite;
+}
 header h2 {
-  /* font-size: 3rem; */
-  font-size: clamp(2.2rem, 5.2vw, 3rem);
+  font-size: clamp(1.8rem, 7vw, 3rem);
   font-weight: 500;
   margin: 0;
 }
@@ -60,22 +87,19 @@ header div {
   align-items: center;
   /* width: 520px; */
   /* width: 420px; */
-  width: clamp(390px, 60vw, 520px);
-  /* background: red; */
+  /* width: clamp(390px, 60vw, 520px); */
+  /* width: clamp(350px, 60vw, 520px); */
+  width: clamp(320px, 80vw, 520px);
 }
 .header-name svg {
   /* font-size: 2.2rem; */
   font-size: clamp(.5rem, 6vw, 2.2rem);
-  animation: bounce .9s ease-in ;
+  /* animation: bounce .9s ease-in 4s infinite ; */
+  /* animation: bounce .9s ease-in 5s infinite forwards, beat 3s linear infinite ; */
 }
- @keyframes bounce {
-  0% {transform: translateX(0%); animation-timing-function: ease-out}
-  25% {transform: translateX(100%)}
-  50% {transform: translateX(0%); animation-timing-function: ease}
-  70% {transform: translateX(25%)}
-  80% {transform: translateX(0%)}
-  90% {transform: translateX(12%)}
-  100% {transform: translateX(0%)}
+.header-svg-animation {
+  /* animation: bounce .9s ease-in 5s ; */
+  animation: colorGlow 2.8s ease-in-out infinite;
 }
 .socials-list ul {
   display: flex;
@@ -98,7 +122,7 @@ header div a {
 }
 header div a:hover {
   transform: scale(1.2);
-  color: #b3000c
+  color: #dc143cc7
 }
 header div a svg {
   font-size: 1.7rem;
@@ -126,4 +150,84 @@ section {
 }
 section h2 {
   font-size: 2.5rem;
+  color: #E53935;
+  animation: colorGlow 2.8s ease-in-out infinite;
+}
+
+@media (max-width: 530px) {
+  nav {
+    overflow: visible;
+  }
+  nav .main-list {
+    visibility: hidden;
+  }
+  nav .menu {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    /* transform: translate(400%, -500%); */
+    transform: translate(400%, 50%);
+    font-size: 2.2rem;
+  }
+  
+}
+@media (min-width: 531px) {
+  .menu-list {
+    visibility: hidden;
+  }
+}
+
+.hamburger-menu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  /* top: 100%; */
+  transform: translateY(0%);
+  width: 100%;
+  z-index: 5;
+}
+.hamburger-menu ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+.hamburger-menu ul li {
+  margin-right: 0;
+  padding: .75em 0;
+  cursor: pointer;
+}
+
+.fadeUp {
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 1.8s ease;
+}
+.fadeUp.active {
+  transform: translateY(0px);
+  opacity: 1;
+  
+}
+.hide {
+  transform: translateY(150px);
+  opacity: 0;
+}
+.hideScroll {
+  overflow-y: hidden;
+}
+@keyframes bounce {
+  0% {transform: translateX(0%); animation-timing-function: ease-out}
+  25% {transform: translateX(100%)}
+  50% {transform: translateX(0%); animation-timing-function: ease}
+  70% {transform: translateX(25%)}
+  80% {transform: translateX(0%)}
+  90% {transform: translateX(12%)}
+  100% {transform: translateX(0%)}
+}
+@keyframes colorGlow {
+  0%, 100% {
+    color: #E53935;
+  }
+  50% {
+    color: #FF6666;
+  }
 }
