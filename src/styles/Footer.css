@@ -36,6 +36,9 @@ footer div ul li:hover {
 footer div ul li:hover a {
     color: #dc143cc7;
 }
+footer button a {
+    color: inherit;
+}
 
 @keyframes colorGlow {
   0%, 100% {

@@ -53,6 +53,7 @@
     align-self: center;
     transform-origin: center center;
     position: absolute;
+    right: 50;
     animation: right 1.7s ease forwards, transfer-right 5.1s ease-in-out forwards 5.4s, soft-float-right 7s ease-in-out infinite 8s;
 }
 .orbit {
@@ -62,7 +63,7 @@
     z-index: 12;
 }
 .initial-orbit {
-    animation: orbit 3.5s ease-in-out forwards 1.5s;
+    animation: orbit 3.5s ease-out forwards 1.5s;
 }
 
 @keyframes left {
@@ -70,13 +71,21 @@
     100% {top: 50%; left: 50%; transform: translate(-70%, 10%) rotate(80deg); }
 }
 @keyframes transfer-left {
-    0% {top: 50%; left: 50%; transform: translate(-70%, 10%) rotate(80deg) scale(1); }
+    /* 0% {top: 50%; left: 50%; transform: translate(-70%, 10%) rotate(80deg) scale(1); }
     5% {top: 50%; left: 50%; transform: translate(-800%, 10%) rotate(80deg) scale(1);}
     15% {top: 50%; left: 50%; color: #dc143cc7; transform: translate(-800%, 10%) rotate(80deg) scale(2.5);}
     20% {top: 50%; left: 50%; transform: translate(-800%, 10%) rotate(80deg) scale(1);}
     25% {top: 50%; left: 50%; color: #dc143cc7; transform: translate(-800%, 10%) rotate(80deg) scale(2.5);}
     50% {top: 50%; left: 50%; opacity: 0; transform: translate(-800%, 10%) rotate(80deg) scale(1);}
-    100% {top: 50%; left: 50%; opacity: 0; transform: translate(-800%, 10%) rotate(80deg) scale(1);}
+    100% {top: 50%; left: 50%; opacity: 0; transform: translate(-800%, 10%) rotate(80deg) scale(1);} */
+
+    0% {top: 50%; left: 50%; transform: translate(-70%, 10%) rotate(80deg) scale(1); }
+    5% {top: 50%; left: 50%; transform: translate(-40vw, 10%) rotate(80deg) scale(1);}
+    15% {top: 50%; left: 50%; color: #dc143cc7; transform: translate(-40vw, 10%) rotate(80deg) scale(2.5);}
+    20% {top: 50%; left: 50%; transform: translate(-40vw, 10%) rotate(80deg) scale(1);}
+    25% {top: 50%; left: 50%; color: #dc143cc7; transform: translate(-40vw, 10%) rotate(80deg) scale(2.5);}
+    50% {top: 50%; left: 50%; opacity: 0; transform: translate(-40vw, 10%) rotate(80deg) scale(1);}
+    100% {top: 50%; left: 50%; opacity: 0; transform: translate(-40vw, 10%) rotate(80deg) scale(1);}
 }
 
 @keyframes middle {
@@ -84,13 +93,21 @@
     100% {top: 50%; left: 50%; transform: translate(1%, -130%) rotate(20deg); }
 }
 @keyframes transfer-middle {
-    0% {top: 50%; left: 50%; transform: translate(1%, -130%) rotate(20deg) scale(1);}
+    /* 0% {top: 50%; left: 50%; transform: translate(1%, -130%) rotate(20deg) scale(1);}
     5% {top: 50%; left: 50%; transform: translate(1%, -900%) rotate(20deg) scale(1);}
     15% {top: 50%; left: 50%; color: #dc143cc7; transform: translate(1%, -900%) scale(2.5) rotate(20deg) scale(1);}
     20% {top: 50%; left: 50%; transform: translate(1%, -900%) rotate(20deg) scale(1);}
     25% {top: 50%; left: 50%; color: #dc143cc7; transform: translate(1%, -900%) scale(2.5) rotate(20deg) scale(1);}
     50% {top: 50%; left: 50%; opacity: 0; transform: translate(1%, -900%) rotate(20deg) scale(1);}
-    100% {top: 50%; left: 50%; opacity: 0; transform: translate(1%, -900%) rotate(20deg) scale(1);}
+    100% {top: 50%; left: 50%; opacity: 0; transform: translate(1%, -900%) rotate(20deg) scale(1);} */
+
+    0% {top: 50%; left: 50%; transform: translate(1%, -130%) rotate(20deg) scale(1);}
+    5% {top: 50%; left: 50%; transform: translate(1%, -30vh) rotate(20deg) scale(1);}
+    15% {top: 50%; left: 50%; color: #dc143cc7; transform: translate(1%, -30vh) scale(2.5) rotate(20deg) scale(1);}
+    20% {top: 50%; left: 50%; transform: translate(1%, -30vh) rotate(20deg) scale(1);}
+    25% {top: 50%; left: 50%; color: #dc143cc7; transform: translate(1%, -30vh) scale(2.5) rotate(20deg) scale(1);}
+    50% {top: 50%; left: 50%; opacity: 0; transform: translate(1%, -30vh) rotate(20deg) scale(1);}
+    100% {top: 50%; left: 50%; opacity: 0; transform: translate(1%, -30vh) rotate(20deg) scale(1);}
 }
 
 @keyframes right {
@@ -98,17 +115,26 @@
     100% {top: 50%; right: 50%; transform: translate(165%, 10%) rotate(80deg) ; }
 }
 @keyframes transfer-right {
-     0% {top: 50%; right: 50%; transform: translate(170%, 10%) scale(1) rotate(80deg) ; }
+     /* 0% {top: 50%; right: 50%; transform: translate(170%, 10%) scale(1) rotate(80deg) ; }
      5% {top: 50%; right: 50%; transform: translate(900%, 10%) scale(1) rotate(80deg) ;}
      15% {top: 50%; right: 50%; color: #dc143cc7; transform: translate(900%, 10%) scale(2.5) rotate(80deg) ;}
      20% {top: 50%; right: 50%; transform: translate(900%, 10%) scale(1) rotate(80deg) ;}
      25% {top: 50%; right: 50%; color: #dc143cc7; transform: translate(900%, 10%) scale(2.5) rotate(80deg) ;}
      50% {top: 50%; right: 50%; opacity: 0; transform: translate(900%, 10%) scale(1) rotate(80deg);}
      100% {top: 50%; right: 50%; opacity: 0;  transform: translate(900%, 10%) scale(1) rotate(80deg);}
+      */
+
+     0% {top: 50%; right: 50%; transform: translate(170%, 10%) scale(1) rotate(80deg) ; }
+     5% {top: 50%; right: 50%; transform: translate(40vw, 10%) scale(1) rotate(80deg) ;}
+     15% {top: 50%; right: 50%; color: #dc143cc7; transform: translate(40vw, 10%) scale(2.5) rotate(80deg) ;}
+     20% {top: 50%; right: 50%; transform: translate(40vw, 10%) scale(1) rotate(80deg) ;}
+     25% {top: 50%; right: 50%; color: #dc143cc7; transform: translate(40vw, 10%) scale(2.5) rotate(80deg) ;}
+     50% {top: 50%; right: 50%; opacity: 0; transform: translate(40vw, 10%) scale(1) rotate(80deg);}
+     100% {top: 50%; right: 50%; opacity: 0;  transform: translate(40vw, 10%) scale(1) rotate(80deg);}
 }
 @keyframes orbit {
     0% {transform: rotate(0deg);}
-    100% {transform: rotate(2520deg); }
+    100% {transform: rotate(1800deg); }
 }
 
 @keyframes soft-float-left {
