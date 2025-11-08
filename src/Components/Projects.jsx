@@ -9,7 +9,7 @@ import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
 
 const Projects = () => {
   return (
-    <section className='projects fadeUp'>
+    <section className='projects fadeUp' id='projects'>
         <h2>Projects</h2>
         <div className='project-container'>
           <a className='link' href='https://falloutterminalapp.netlify.app/' target='_blank'>
