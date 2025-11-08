@@ -119,7 +119,7 @@ function App() {
           <li><a href='#about' className='anchor-links'>About</a></li>
           <li><a href='#projects' className='anchor-links'>Projects</a></li>
           <li><a href='#contact' className='anchor-links'>Contact</a></li>
-          <li><a href='mailto:Alv.Barnes@gmail.com' target='_blank' className='nav-resume'>Resume</a></li>
+          <li><a href='https://flowcv.com/resume/vmckrler4r' target='_blank' className='nav-resume'>Resume</a></li>
         </ul>
         
       </nav>
@@ -129,7 +129,7 @@ function App() {
           <li>About</li>
           <li>Projects</li>
           <li>Contact</li>
-          <li><a href='' target='_blank'>Resume</a></li>
+          <li><a href='https://flowcv.com/resume/vmckrler4r' target='_blank'>Resume</a></li>
         </ul>
       </div>
       {/* <header className='fadeUp intro hide'> */}
