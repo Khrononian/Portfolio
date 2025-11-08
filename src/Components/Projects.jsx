@@ -1,9 +1,9 @@
 import React from 'react'
 import '../styles/Projects.css'
 import fallout from '../images/fallouterminal.png'
-import steam from '../images/steamclone.png'
+import steam from '../images/SteamClone.png'
 import calculator from '../images/tscalculator.png'
-import waldo from '../images/whereswaldo.png'
+import waldo from '../images/WheresWaldo.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
 
