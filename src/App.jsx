@@ -23,7 +23,7 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setShowHeaders(true)
-    }, 7500)
+    }, 5700)
   })
 
   useEffect(() => {

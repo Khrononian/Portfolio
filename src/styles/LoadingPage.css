@@ -3,20 +3,20 @@
     transform: rotate(80deg);
     align-self: center;
     transform: translate(30%, 180%) rotate(80deg);
-    animation: soft-float-left 7s ease-in-out infinite 6.5s;
+    animation: soft-float-left 7s linear infinite 6.5s;
 }
 .middle-stats {
     /* position: absolute; */
     transform: rotate(20deg);
     transform: translate(0%, 50%) rotate(20deg);
-    animation: soft-float-middle 7s ease-in-out infinite 6.5s;
+    animation: soft-float-middle 7s linear infinite 6.5s;
 }
 .right-stats {
     /* position: absolute; */
     transform: rotate(80deg);
     align-self: center;
     transform: translate(-30%, 180%) rotate(80deg);
-    animation: soft-float-right 7s ease-in-out infinite 6.5s;
+    animation: soft-float-right 7s linear infinite 6.5s;
 }
 
 .loading-page {
@@ -40,13 +40,13 @@
     align-self: center;
     transform-origin: center center;
     position: absolute;
-    animation: left 1.7s ease forwards, transfer-left 5.1s linear forwards 5.4s, soft-float-left 7s ease-in-out infinite 8s;
+    animation: left 1s ease forwards, transfer-left 2.5s linear forwards 4s, soft-float-left 3s ease-in-out infinite 7s;
 }
 .loading-page div svg:nth-child(2) {
     transform: rotate(20deg);
     transform-origin: center center;
     position: absolute;
-    animation: middle 1.7s ease forwards, transfer-middle 5.1s linear forwards 5.4s, soft-float-middle 7s ease-in-out infinite 8s;
+    animation: middle 1s ease forwards, transfer-middle 2.5s linear forwards 4s, soft-float-middle 3s ease-in-out infinite 7s;
 }
 .loading-page div svg:last-child {
     transform: rotate(80deg);
@@ -54,7 +54,7 @@
     transform-origin: center center;
     position: absolute;
     right: 50;
-    animation: right 1.7s ease forwards, transfer-right 5.1s ease-in-out forwards 5.4s, soft-float-right 7s ease-in-out infinite 8s;
+    animation: right 1s ease forwards, transfer-right 2.5s linear forwards 4s, soft-float-right 3s ease-in-out infinite 7s;
 }
 .orbit {
     position: absolute;
@@ -63,7 +63,7 @@
     z-index: 12;
 }
 .initial-orbit {
-    animation: orbit 3.5s ease-out forwards 1.5s;
+    animation: orbit 2s ease-in-out forwards 1.5s;
 }
 
 @keyframes left {
@@ -134,7 +134,7 @@
 }
 @keyframes orbit {
     0% {transform: rotate(0deg);}
-    100% {transform: rotate(1800deg); }
+    100% {transform: rotate(1440deg); }
 }
 
 @keyframes soft-float-left {

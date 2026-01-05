@@ -34,7 +34,7 @@ const Loading = () => {
             if (orbit.children[i].classList.contains('right')) orbit.children[i].classList.add('right-stats')
           }
         }
-      }, 3000)
+      }, 2000)
     })
   }, [])
 
