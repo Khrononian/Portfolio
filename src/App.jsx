@@ -4,9 +4,8 @@ import About from './Components/About'
 import Projects from './Components/Projects'
 import Footer from './Components/Footer'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSquareGithub, faSquareLinkedin, faHtml5, faCss3Alt, faJs, faReact, faGitAlt } from '@fortawesome/free-brands-svg-icons'
-import { faGears, faFire, faFilePdf, faEnvelope, faCode, faGlobe, faGamepad, faWifi, faDesktop, faBars, faX } from '@fortawesome/free-solid-svg-icons'
-// import { HashLink } from 'react-router-hash-link'
+import { faSquareGithub, faSquareLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faEnvelope, faCode, faGlobe, faGamepad, faWifi, faDesktop, faBars, faX } from '@fortawesome/free-solid-svg-icons'
 import './styles/App.css'
 
 function App() {
@@ -18,7 +17,6 @@ function App() {
   const icons = [faCode, faGlobe, faGamepad, faWifi, faDesktop]
   const menuRef = useRef()
   const iconRef = useRef()
-  
   
   useEffect(() => {
     setTimeout(() => {
@@ -102,26 +100,13 @@ function App() {
     <main>
       <Loading />
       <nav className={showHeaders == false ? 'hide' : 'fadeUp active'}>
-        
-        {/* <div className='menu-list' ref={menuRef}>
-          <ul>
-            <li>About</li>
-            <li>Projects</li>
-            <li>Contact</li>
-            <li><a href='' target='_blank'>Resume</a></li>
-          </ul>
-        </div> */}
         <a onClick={showHamburgerMenu} className={menuToggle == false ? 'menu slides-right' : 'menu slides-left'}><FontAwesomeIcon icon={menuToggle == false ? faBars : faX}/> </a>
         <ul className='main-list'>
-          {/* <li><HashLink smooth to='/#about'>About</HashLink></li>
-          <li><HashLink smooth to='/#projects'>Projects</HashLink></li>
-          <li><HashLink smooth to='/#contact'>Contact</HashLink></li> */}
           <li><a href='#about' className='anchor-links'>About</a></li>
           <li><a href='#projects' className='anchor-links'>Projects</a></li>
           <li><a href='#contact' className='anchor-links'>Contact</a></li>
           <li><a href='https://flowcv.com/resume/vmckrler4r' target='_blank' className='nav-resume'>Resume</a></li>
         </ul>
-        
       </nav>
 
       <div className={menuToggle == false ? 'nav-list menu-appear-up' : 'nav-list menu-appear-down'} ref={menuRef}>
@@ -132,7 +117,6 @@ function App() {
           <li><a href='https://flowcv.com/resume/vmckrler4r' target='_blank'>Resume</a></li>
         </ul>
       </div>
-      {/* <header className='fadeUp intro hide'> */}
       <header className={showHeaders == false ? 'hide' : 'fadeUp active'}>
         <h1>Alvin <span>Barnes</span></h1>
         <div className='header-name' ref={iconRef}>
