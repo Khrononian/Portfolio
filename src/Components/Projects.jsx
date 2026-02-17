@@ -4,6 +4,7 @@ import fallout from '../images/fallouterminal.png'
 import steam from '../images/SteamClone.png'
 import calculator from '../images/tscalculator.png'
 import waldo from '../images/WheresWaldo.png'
+import leagueoflegends from '../images/leagueoflegends.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
 
@@ -22,6 +23,19 @@ const Projects = () => {
                 </div>
                 <p><span>React</span></p>
                 <p>A recreation of the in-game computer terminals from the Fallout series. Text based hacking mini game simulated with a retro futuristic green monochrome interface built with react.</p>
+              </div>
+            </div>
+          </a>
+          <a className='link' href='https://leagueanalytics.netlify.app/' target='_blank'>
+            <div className='card'>
+              <img src={leagueoflegends} alt='LeagueOfLegends'/>
+              <div>
+                <div className='header-btn'>
+                  <h3>League of Legends Analytics</h3>
+                   <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+                </div>
+                <p><span>React</span><span>TypeScript</span><span>Firebase</span></p>
+                <p>With this app, you can explore player stats, match history, champion data and ranked stats pulled from Riot Games' official API. </p>
               </div>
             </div>
           </a>
