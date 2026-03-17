@@ -26,18 +26,21 @@ function App() {
 
   useEffect(() => {
     const interval = setInterval(() => {
+      setToggleAnimation(false)
       setIndex(prev => (prev + 1) % icons.length)
       setChosenIcons(icons[index])
     }, 7000)
+    
+    requestAnimationFrame(() => setToggleAnimation(true))
 
     return () => clearInterval(interval)
   }, [index])
 
-  useEffect(() => {
-    setToggleAnimation(false)
+  // useEffect(() => {
+  //   setToggleAnimation(false)
 
-    requestAnimationFrame(() => setToggleAnimation(true))
-  }, [index, toggleAnimation])
+  //   requestAnimationFrame(() => setToggleAnimation(true))
+  // }, [index, toggleAnimation])
 
   // useEffect(() => {
   //   const icon = iconRef.current
