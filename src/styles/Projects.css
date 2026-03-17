@@ -19,24 +19,25 @@
     width: clamp(320px, 50vw, 430px);
     height: 564.55px;
     background: #2e0003;
-    border-radius: 20px;
+    border-radius: 10px;
     cursor: pointer;
     color: white;
-    transition: transform .5s;
+    transition: all .5s;
     animation-duration: .7s;
     animation-fill-mode: forwards;
 }
 .card:hover {
     transform: scale(1.08) ;
-    animation-name: rotate;
+    box-shadow: 0px 0px 30px #b3000c;
+    /* animation-name: rotate; */
     animation-timing-function: ease-in-out;
 }
 
 .card img {
     width: 100%;
     object-fit: cover;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 .card > *:not(:first-child) {
     padding: 1.2em;
@@ -72,9 +73,9 @@
   transform: translateY(0px);
   opacity: 1;
 }
-@keyframes rotate {
+/* @keyframes rotate {
     0% {rotate: 0turn;}
     25% {rotate: .02turn;}
     50% {rotate: -.02turn;}
     75% {rotate: 0turn;}
-}
+} */
