@@ -39,7 +39,7 @@ const Projects = () => {
               </div>
             </div>
           </a>
-          <a href='https://steampoweredclone.netlify.app/' target='_blank'>
+          {/* <a href='https://steampoweredclone.netlify.app/' target='_blank'>
             <div className='card'>
               <img src={steam} alt='Steam'/>
               <div>
@@ -51,7 +51,7 @@ const Projects = () => {
                 <p>Steam inspired web app which showcases a game library, store and user profiles. Designed with responsive UI to mimic the look and feel of a digital game platform.</p>
               </div>
             </div>
-          </a>
+          </a> */}
 
           <a href='https://tscalculate.netlify.app/' target='_blank'>
             <div className='card'>
