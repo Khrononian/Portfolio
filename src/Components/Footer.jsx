@@ -7,7 +7,6 @@ const Footer = ({ github, linkedin, email }) => {
     <footer className='fadeUp' id='contact'>
         <h2>Available for opportunities!</h2>
         <div>
-          {/* <button>Get in touch</button> */}
           <button><a href=''>Get in touch</a></button>
           <div>
             <p>Find me in these spaces too</p>

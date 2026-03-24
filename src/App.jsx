@@ -36,45 +36,6 @@ function App() {
     return () => clearInterval(interval)
   }, [index])
 
-  // useEffect(() => {
-  //   setToggleAnimation(false)
-
-  //   requestAnimationFrame(() => setToggleAnimation(true))
-  // }, [index, toggleAnimation])
-
-  // useEffect(() => {
-  //   const icon = iconRef.current
-  //   let current = 0;
-  //   const interval = setInterval(() => {
-  //     console.log('ICON', icon, icon.querySelector('svg'))
-
-  //     // setToggleAnimation(current => !current)
-  //     setToggleAnimation(false)
-
-  //     requestAnimationFrame(() => setToggleAnimation(true))
-    
-        
-  //     current = (current + 1) % icons.length
-  //     setChosenIcons(icons[current])
-
-      
-  //   }, 7000)
-
-  //   return () => clearInterval(interval)
-  // }, [])
-
-  // const startSvgAnimation = () => {
-  //   console.log('TIMER', showAnimation)
-  //   setTimeout(() => {
-  //     setShowAnimation(true)
-      
-  //     setTimeout(() => {
-  //       console.log('INNERTIMER', showAnimation)
-  //       setShowAnimation(false)
-  //       startSvgAnimation()
-  //     }, 5400)
-  //   }, 5000)
-  // }
   const showHamburgerMenu = (event) => {
     const menu = menuRef.current
     console.log(menuRef, menuRef.current, event.target.parentElement)
@@ -124,9 +85,7 @@ function App() {
         <h1>Alvin <span>Barnes</span></h1>
         <div className='header-name' ref={iconRef}>
           <h2>Frontend Developer</h2>
-          {/* <FontAwesomeIcon icon={faCode} className={showAnimation == false ? '' : 'header-svg-animation'} /> */}
           <FontAwesomeIcon icon={chosenIcons} className={toggleAnimation == false ? 'header-svg-glow' : 'header-svg-animation'} />
-          {/* <FontAwesomeIcon icon={chosenIcons} className='header-svg-animation' /> */}
         </div>
         <div>
           <h4>Skills</h4>
