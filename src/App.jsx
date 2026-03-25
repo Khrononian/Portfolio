@@ -59,7 +59,7 @@ function App() {
 
   return (
     <main>
-      <Loading />
+      {showHeaders == false ? <Loading /> : null} 
       <nav className={showHeaders == false ? 'hide' : 'fadeUp active'}>
         <a onClick={showHamburgerMenu} className={menuToggle == false ? 'menu slides-right' : 'menu slides-left'}>{menuToggle == false ? <FaBars /> : <ImCross />} </a>
         <ul className='main-list'>

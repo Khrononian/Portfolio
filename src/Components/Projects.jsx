@@ -1,4 +1,3 @@
-import React from 'react'
 import '../styles/Projects.css'
 import fallout from '../images/fallouterminalv2.webp'
 import calculator from '../images/tscalculatorv2.webp'
@@ -37,19 +36,6 @@ const Projects = () => {
               </div>
             </div>
           </a>
-          {/* <a href='https://steampoweredclone.netlify.app/' aria-label='Steam Clone link' target='_blank'>
-            <div className='card'>
-              <img src={steam} alt='Steam'/>
-              <div>
-                <div className='header-btn'>
-                  <h3>Steam Clone</h3>
-                   <FontAwesomeIcon icon={FaExternalLinkAlt} />
-                </div>
-                <p><span>React</span><span>Firebase</span><span>Material UI</span></p>
-                <p>Steam inspired web app which showcases a game library, store and user profiles. Designed with responsive UI to mimic the look and feel of a digital game platform.</p>
-              </div>
-            </div>
-          </a> */}
 
           <a href='https://tscalculate.netlify.app/' aria-label='TypeScript Calculator link' target='_blank'>
             <div className='card'>
