@@ -4,7 +4,7 @@ import fallout from '../images/fallouterminalv2.webp'
 import calculator from '../images/tscalculatorv2.webp'
 import waldo from '../images/whereswaldov2.webp'
 import leagueoflegends from '../images/leagueoflegendsv2.webp'
-import { FaArrowUpRightFromSquare } from "react-icons/fa6";
+import { FaExternalLinkAlt } from "react-icons/fa";
 
 const Projects = () => {
   return (
@@ -17,7 +17,7 @@ const Projects = () => {
               <div>
                 <div className='header-btn'>
                   <h3>Fallout Terminal</h3>
-                   <FaArrowUpRightFromSquare />
+                   <FaExternalLinkAlt />
                 </div>
                 <p><span>React</span></p>
                 <p>A recreation of the in-game computer terminals from the Fallout series. Text based hacking mini game simulated with a retro futuristic green monochrome interface built with react.</p>
@@ -30,7 +30,7 @@ const Projects = () => {
               <div>
                 <div className='header-btn'>
                   <h3>League of Legends Analytics</h3>
-                   <FaArrowUpRightFromSquare />
+                   <FaExternalLinkAlt />
                 </div>
                 <p><span>React</span><span>TypeScript</span><span>Firebase</span></p>
                 <p>With this app, you can explore player stats, match history, champion data and ranked stats pulled from Riot Games' official API. </p>
@@ -43,7 +43,7 @@ const Projects = () => {
               <div>
                 <div className='header-btn'>
                   <h3>Steam Clone</h3>
-                   <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+                   <FontAwesomeIcon icon={FaExternalLinkAlt} />
                 </div>
                 <p><span>React</span><span>Firebase</span><span>Material UI</span></p>
                 <p>Steam inspired web app which showcases a game library, store and user profiles. Designed with responsive UI to mimic the look and feel of a digital game platform.</p>
@@ -57,7 +57,7 @@ const Projects = () => {
               <div>
                 <div className='header-btn'>
                   <h3>TypeScript Calculator</h3>
-                   <FaArrowUpRightFromSquare />
+                   <FaExternalLinkAlt />
                 </div>
                 <p><span>React</span><span>TypeScript</span></p>
                 <p>Simple calculator to operate any functional operations. First project to work with while learning TypeScript.</p>
@@ -70,7 +70,7 @@ const Projects = () => {
               <div>
                 <div className='header-btn'>
                   <h3>Where's Waldo</h3>
-                   <FaArrowUpRightFromSquare />
+                   <FaExternalLinkAlt />
                 </div>
                 <p><span>JavaScript</span></p>
                 <p>A simple interactive app where users search for hidden characters within images.</p>

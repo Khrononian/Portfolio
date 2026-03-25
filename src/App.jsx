@@ -34,9 +34,8 @@ function App() {
     return () => clearInterval(interval)
   }, [index])
 
-  const showHamburgerMenu = (event) => {
+  const showHamburgerMenu = () => {
     const menu = menuRef.current
-    console.log(menuRef, menuRef.current, event.target.parentElement)
     
     setMenuToggle(current => !current)
 
