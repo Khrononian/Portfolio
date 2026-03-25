@@ -8,7 +8,7 @@ import { ImCross } from "react-icons/im";
 import './styles/App.css'
 
 function App() {
-  const [showHeaders, setShowHeaders] = useState(false) 
+  // const [showHeaders, setShowHeaders] = useState(false) 
   const [index, setIndex] = useState(0)
   const [menuToggle, setMenuToggle] = useState(false)
   const [toggleAnimation, setToggleAnimation] = useState(false)
@@ -17,11 +17,11 @@ function App() {
   const menuRef = useRef()
   const iconRef = useRef()
   
-  useEffect(() => {
-    setTimeout(() => {
-      setShowHeaders(true)
-    }, 3200)
-  })
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     setShowHeaders(true)
+  //   }, 3200)
+  // })
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -59,8 +59,8 @@ function App() {
 
   return (
     <main>
-      {showHeaders == false ? <Loading /> : null} 
-      <nav className={showHeaders == false ? 'hide' : 'fadeUp active'}>
+      {/* {showHeaders == false ? <Loading /> : null}  */}
+      <nav >
         <a onClick={showHamburgerMenu} className={menuToggle == false ? 'menu slides-right' : 'menu slides-left'}>{menuToggle == false ? <FaBars /> : <ImCross />} </a>
         <ul className='main-list'>
           <li><a href='#about' className='anchor-links'>About</a></li>
@@ -78,7 +78,7 @@ function App() {
           <li><a href='https://flowcv.com/resume/vmckrler4r' target='_blank'>Resume</a></li>
         </ul>
       </div>
-      <header className={showHeaders == false ? 'hide' : 'fadeUp active'}>
+      <header >
         <h1>Alvin <span>Barnes</span></h1>
         <div className='header-name' ref={iconRef}>
           <h2>Frontend Developer</h2>
