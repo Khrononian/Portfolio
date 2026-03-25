@@ -15,6 +15,9 @@ footer button:hover {
     box-shadow: 5px 5px #E53935;
     transform: translate(-2px, -2px);
 }
+footer button a:hover {
+    color: #E53935
+}
 footer div ul {
     display: flex;
     justify-content: space-between;

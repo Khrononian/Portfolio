@@ -11,7 +11,7 @@ const Projects = () => {
     <section className='projects fadeUp' id='projects'>
         <h2>Projects</h2>
         <div className='project-container'>
-          <a className='link' href='https://falloutterminalapp.netlify.app/' target='_blank'>
+          <a className='link' href='https://falloutterminalapp.netlify.app/' aria-label='Fallout link' target='_blank'>
             <div className='card'>
               <img src={fallout} alt='Fallout'/>
               <div>
@@ -24,7 +24,7 @@ const Projects = () => {
               </div>
             </div>
           </a>
-          <a className='link' href='https://leagueanalytics.netlify.app/' target='_blank'>
+          <a className='link' href='https://leagueanalytics.netlify.app/' aria-label='League of Legends Analytics link' target='_blank'>
             <div className='card'>
               <img src={leagueoflegends} alt='LeagueOfLegends'/>
               <div>
@@ -37,7 +37,7 @@ const Projects = () => {
               </div>
             </div>
           </a>
-          {/* <a href='https://steampoweredclone.netlify.app/' target='_blank'>
+          {/* <a href='https://steampoweredclone.netlify.app/' aria-label='Steam Clone link' target='_blank'>
             <div className='card'>
               <img src={steam} alt='Steam'/>
               <div>
@@ -51,7 +51,7 @@ const Projects = () => {
             </div>
           </a> */}
 
-          <a href='https://tscalculate.netlify.app/' target='_blank'>
+          <a href='https://tscalculate.netlify.app/' aria-label='TypeScript Calculator link' target='_blank'>
             <div className='card'>
               <img src={calculator} alt='Calculator'/>
               <div>
@@ -64,7 +64,7 @@ const Projects = () => {
               </div>
             </div>
           </a>
-          <a href='https://wheresthatcharacter.netlify.app/' target='_blank'>
+          <a href='https://wheresthatcharacter.netlify.app/' aria-label="Where's Waldo link" target='_blank'>
             <div className='card'>
               <img src={waldo} alt='Waldo'/>
               <div>
