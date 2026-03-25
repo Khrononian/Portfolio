@@ -11,9 +11,9 @@ const Footer = () => {
           <div>
             <p>Find me in these spaces too</p>
             <ul>
-              <li><a href='https://github.com/Khrononian' target='_blank'><FaGithubSquare /></a></li>
-              <li><a href='www.linkedin.com/in/alvin-barnes' target='_blank'><FaLinkedin /></a></li>
-              <li><a href='mailto:Alv.Barnes@gmail.com' target='_blank'><FaEnvelope /></a></li>
+              <li><a href='https://github.com/Khrononian' aria-label='Github link' target='_blank'><FaGithubSquare /></a></li>
+              <li><a href='https://www.linkedin.com/in/alvin-barnes' aria-label='LinkedIn link' target='_blank'><FaLinkedin /></a></li>
+              <li><a href='mailto:Alv.Barnes@gmail.com' aria-label='Email link' target='_blank'><FaEnvelope /></a></li>
             </ul>
           </div>
         </div>

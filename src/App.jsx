@@ -99,9 +99,9 @@ function App() {
         </div>
         <div className='socials-list'>
           <ul>
-            <li><a href='https://github.com/Khrononian' target='_blank'><FaGithubSquare /></a></li>
-            <li><a href='www.linkedin.com/in/alvin-barnes' target='_blank'><FaLinkedin /></a> </li>
-            <li><a href='mailto:Alv.Barnes@gmail.com' className='last-link'><FaEnvelope /></a></li>
+            <li><a href='https://github.com/Khrononian' aria-label='Github link' target='_blank'><FaGithubSquare /></a></li>
+            <li><a href='https://www.linkedin.com/in/alvin-barnes' aria-label='LinkedIn link' target='_blank'><FaLinkedin /></a></li>
+            <li><a href='mailto:Alv.Barnes@gmail.com' aria-label='Email link' className='last-link'><FaEnvelope /></a></li>
           </ul>
         </div>
       </header>
