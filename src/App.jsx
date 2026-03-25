@@ -20,7 +20,7 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setShowHeaders(true)
-    }, 5700)
+    }, 3200)
   })
 
   useEffect(() => {
@@ -107,9 +107,7 @@ function App() {
       <About />
       <Projects />
       <Footer 
-        github={FaGithubSquare} 
-        linkedin={FaLinkedin} 
-        email={FaEnvelope}
+        
       />
     </main>
   )
