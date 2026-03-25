@@ -3,18 +3,17 @@ import Loading from './Loading'
 import About from './Components/About'
 import Projects from './Components/Projects'
 import Footer from './Components/Footer'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSquareGithub, faSquareLinkedin } from '@fortawesome/free-brands-svg-icons'
-import { faEnvelope, faCode, faGlobe, faGamepad, faWifi, faDesktop, faBars, faX } from '@fortawesome/free-solid-svg-icons'
+import { FaEnvelope, FaCode, FaGlobe, FaGamepad, FaWifi, FaDesktop, FaBars, FaGithubSquare, FaLinkedin } from "react-icons/fa";
+import { ImCross } from "react-icons/im";
 import './styles/App.css'
 
 function App() {
   const [showHeaders, setShowHeaders] = useState(false) 
   const [index, setIndex] = useState(0)
-  const [chosenIcons, setChosenIcons] = useState('')
   const [menuToggle, setMenuToggle] = useState(false)
   const [toggleAnimation, setToggleAnimation] = useState(false)
-  const icons = [faCode, faGlobe, faGamepad, faWifi, faDesktop]
+  const icons = [FaCode, FaGlobe, FaGamepad, FaWifi, FaDesktop]
+  const Icon = icons[index]
   const menuRef = useRef()
   const iconRef = useRef()
   
@@ -28,7 +27,6 @@ function App() {
     const interval = setInterval(() => {
       setToggleAnimation(false)
       setIndex(prev => (prev + 1) % icons.length)
-      setChosenIcons(icons[index])
     }, 7000)
     
     requestAnimationFrame(() => setToggleAnimation(true))
@@ -64,7 +62,7 @@ function App() {
     <main>
       <Loading />
       <nav className={showHeaders == false ? 'hide' : 'fadeUp active'}>
-        <a onClick={showHamburgerMenu} className={menuToggle == false ? 'menu slides-right' : 'menu slides-left'}><FontAwesomeIcon icon={menuToggle == false ? faBars : faX}/> </a>
+        <a onClick={showHamburgerMenu} className={menuToggle == false ? 'menu slides-right' : 'menu slides-left'}>{menuToggle == false ? <FaBars /> : <ImCross />} </a>
         <ul className='main-list'>
           <li><a href='#about' className='anchor-links'>About</a></li>
           <li><a href='#projects' className='anchor-links'>Projects</a></li>
@@ -85,7 +83,7 @@ function App() {
         <h1>Alvin <span>Barnes</span></h1>
         <div className='header-name' ref={iconRef}>
           <h2>Frontend Developer</h2>
-          <FontAwesomeIcon icon={chosenIcons} className={toggleAnimation == false ? 'header-svg-glow' : 'header-svg-animation'} />
+          <Icon color='#E53935' className={toggleAnimation == false ? 'header-svg-glow' : 'header-svg-animation'} />
         </div>
         <div>
           <h4>Skills</h4>
@@ -101,18 +99,18 @@ function App() {
         </div>
         <div className='socials-list'>
           <ul>
-            <li><a href='https://github.com/Khrononian' target='_blank'><FontAwesomeIcon icon={faSquareGithub} /></a></li>
-            <li><a href='www.linkedin.com/in/alvin-barnes' target='_blank'><FontAwesomeIcon icon={faSquareLinkedin} /></a> </li>
-            <li><a href='mailto:Alv.Barnes@gmail.com' className='last-link'><FontAwesomeIcon icon={faEnvelope} /></a></li>
+            <li><a href='https://github.com/Khrononian' target='_blank'><FaGithubSquare /></a></li>
+            <li><a href='www.linkedin.com/in/alvin-barnes' target='_blank'><FaLinkedin /></a> </li>
+            <li><a href='mailto:Alv.Barnes@gmail.com' className='last-link'><FaEnvelope /></a></li>
           </ul>
         </div>
       </header>
       <About />
       <Projects />
       <Footer 
-        github={faSquareGithub} 
-        linkedin={faSquareLinkedin} 
-        email={faEnvelope}
+        github={FaGithubSquare} 
+        linkedin={FaLinkedin} 
+        email={FaEnvelope}
       />
     </main>
   )

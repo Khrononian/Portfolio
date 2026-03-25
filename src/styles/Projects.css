@@ -29,12 +29,12 @@
 .card:hover {
     transform: scale(1.08) ;
     box-shadow: 0px 0px 30px #b3000c;
-    /* animation-name: rotate; */
     animation-timing-function: ease-in-out;
 }
 
 .card img {
     width: 100%;
+    max-width: 430px;
     height: auto;
     object-fit: cover;
     border-top-left-radius: 10px;
@@ -74,9 +74,3 @@
   transform: translateY(0px);
   opacity: 1;
 }
-/* @keyframes rotate {
-    0% {rotate: 0turn;}
-    25% {rotate: .02turn;}
-    50% {rotate: -.02turn;}
-    75% {rotate: 0turn;}
-} */

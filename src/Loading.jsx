@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCircleNodes } from '@fortawesome/free-solid-svg-icons'
+import { FaCircleNodes } from "react-icons/fa6";
 import './styles/LoadingPage.css'
 
 const Loading = () => {
@@ -41,9 +40,9 @@ const Loading = () => {
   return (
     <div className='loading-page'>
         <div className='orbit initial-orbit'>
-            <FontAwesomeIcon className='left' icon={faCircleNodes} />
-            <FontAwesomeIcon className='middle' icon={faCircleNodes} />
-            <FontAwesomeIcon className='right' icon={faCircleNodes} />
+            <FaCircleNodes className='left' />
+            <FaCircleNodes className='middle' />
+            <FaCircleNodes className='right' />
         </div>
     </div>
   )

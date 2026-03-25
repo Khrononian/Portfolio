@@ -1,20 +1,17 @@
-.left-stats {
-    /* position: absolute; */
+.left-stats, .right-stats {
     transform: rotate(80deg);
     align-self: center;
+}
+.left-stats {
     transform: translate(30%, 180%) rotate(80deg);
     animation: soft-float-left 7s linear infinite 6.5s;
 }
 .middle-stats {
-    /* position: absolute; */
     transform: rotate(20deg);
     transform: translate(0%, 50%) rotate(20deg);
     animation: soft-float-middle 7s linear infinite 6.5s;
 }
 .right-stats {
-    /* position: absolute; */
-    transform: rotate(80deg);
-    align-self: center;
     transform: translate(-30%, 180%) rotate(80deg);
     animation: soft-float-right 7s linear infinite 6.5s;
 }
@@ -23,7 +20,6 @@
     min-height: 100vh;
     position: absolute;
     width: 100%;
-    /* background: red; */
     overflow: hidden;
 }
 .loading-page div {
@@ -35,11 +31,15 @@
 .loading-page div svg {
     font-size: 1.5rem;
 }
-.loading-page div svg:first-child {
+
+.loading-page div svg:first-child,
+.loading-page div svg:last-child {
     transform: rotate(80deg);
     align-self: center;
     transform-origin: center center;
     position: absolute;
+}
+.loading-page div svg:first-child {
     animation: left 1s ease forwards, transfer-left 2.5s linear forwards 4s, soft-float-left 3s ease-in-out infinite 7s;
 }
 .loading-page div svg:nth-child(2) {
@@ -49,17 +49,12 @@
     animation: middle 1s ease forwards, transfer-middle 2.5s linear forwards 4s, soft-float-middle 3s ease-in-out infinite 7s;
 }
 .loading-page div svg:last-child {
-    transform: rotate(80deg);
-    align-self: center;
-    transform-origin: center center;
-    position: absolute;
     right: 50;
     animation: right 1s ease forwards, transfer-right 2.5s linear forwards 4s, soft-float-right 3s ease-in-out infinite 7s;
 }
 .orbit {
     position: absolute;
     transform-origin: center center;
-    /* background: red; */
     z-index: 12;
 }
 .initial-orbit {
@@ -71,14 +66,6 @@
     100% {top: 50%; left: 50%; transform: translate(-70%, 10%) rotate(80deg); }
 }
 @keyframes transfer-left {
-    /* 0% {top: 50%; left: 50%; transform: translate(-70%, 10%) rotate(80deg) scale(1); }
-    5% {top: 50%; left: 50%; transform: translate(-800%, 10%) rotate(80deg) scale(1);}
-    15% {top: 50%; left: 50%; color: #dc143cc7; transform: translate(-800%, 10%) rotate(80deg) scale(2.5);}
-    20% {top: 50%; left: 50%; transform: translate(-800%, 10%) rotate(80deg) scale(1);}
-    25% {top: 50%; left: 50%; color: #dc143cc7; transform: translate(-800%, 10%) rotate(80deg) scale(2.5);}
-    50% {top: 50%; left: 50%; opacity: 0; transform: translate(-800%, 10%) rotate(80deg) scale(1);}
-    100% {top: 50%; left: 50%; opacity: 0; transform: translate(-800%, 10%) rotate(80deg) scale(1);} */
-
     0% {top: 50%; left: 50%; transform: translate(-70%, 10%) rotate(80deg) scale(1); }
     5% {top: 50%; left: 50%; transform: translate(-40vw, 10%) rotate(80deg) scale(1);}
     15% {top: 50%; left: 50%; color: #dc143cc7; transform: translate(-40vw, 10%) rotate(80deg) scale(2.5);}
@@ -93,14 +80,6 @@
     100% {top: 50%; left: 50%; transform: translate(1%, -130%) rotate(20deg); }
 }
 @keyframes transfer-middle {
-    /* 0% {top: 50%; left: 50%; transform: translate(1%, -130%) rotate(20deg) scale(1);}
-    5% {top: 50%; left: 50%; transform: translate(1%, -900%) rotate(20deg) scale(1);}
-    15% {top: 50%; left: 50%; color: #dc143cc7; transform: translate(1%, -900%) scale(2.5) rotate(20deg) scale(1);}
-    20% {top: 50%; left: 50%; transform: translate(1%, -900%) rotate(20deg) scale(1);}
-    25% {top: 50%; left: 50%; color: #dc143cc7; transform: translate(1%, -900%) scale(2.5) rotate(20deg) scale(1);}
-    50% {top: 50%; left: 50%; opacity: 0; transform: translate(1%, -900%) rotate(20deg) scale(1);}
-    100% {top: 50%; left: 50%; opacity: 0; transform: translate(1%, -900%) rotate(20deg) scale(1);} */
-
     0% {top: 50%; left: 50%; transform: translate(1%, -130%) rotate(20deg) scale(1);}
     5% {top: 50%; left: 50%; transform: translate(1%, -30vh) rotate(20deg) scale(1);}
     15% {top: 50%; left: 50%; color: #dc143cc7; transform: translate(1%, -30vh) scale(2.5) rotate(20deg) scale(1);}
@@ -115,15 +94,6 @@
     100% {top: 50%; right: 50%; transform: translate(165%, 10%) rotate(80deg) ; }
 }
 @keyframes transfer-right {
-     /* 0% {top: 50%; right: 50%; transform: translate(170%, 10%) scale(1) rotate(80deg) ; }
-     5% {top: 50%; right: 50%; transform: translate(900%, 10%) scale(1) rotate(80deg) ;}
-     15% {top: 50%; right: 50%; color: #dc143cc7; transform: translate(900%, 10%) scale(2.5) rotate(80deg) ;}
-     20% {top: 50%; right: 50%; transform: translate(900%, 10%) scale(1) rotate(80deg) ;}
-     25% {top: 50%; right: 50%; color: #dc143cc7; transform: translate(900%, 10%) scale(2.5) rotate(80deg) ;}
-     50% {top: 50%; right: 50%; opacity: 0; transform: translate(900%, 10%) scale(1) rotate(80deg);}
-     100% {top: 50%; right: 50%; opacity: 0;  transform: translate(900%, 10%) scale(1) rotate(80deg);}
-      */
-
      0% {top: 50%; right: 50%; transform: translate(170%, 10%) scale(1) rotate(80deg) ; }
      5% {top: 50%; right: 50%; transform: translate(40vw, 10%) scale(1) rotate(80deg) ;}
      15% {top: 50%; right: 50%; color: #dc143cc7; transform: translate(40vw, 10%) scale(2.5) rotate(80deg) ;}

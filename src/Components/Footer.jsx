@@ -1,8 +1,8 @@
 import React from 'react'
 import '../styles/Footer.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FaGithubSquare, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
-const Footer = ({ github, linkedin, email }) => {
+const Footer = () => {
   return (
     <footer className='fadeUp' id='contact'>
         <h2>Available for opportunities!</h2>
@@ -11,9 +11,9 @@ const Footer = ({ github, linkedin, email }) => {
           <div>
             <p>Find me in these spaces too</p>
             <ul>
-              <li><a href='https://github.com/Khrononian' target='_blank'><FontAwesomeIcon icon={github}  /></a></li>
-              <li><a href='www.linkedin.com/in/alvin-barnes' target='_blank'><FontAwesomeIcon icon={linkedin}  /></a></li>
-              <li><a href='mailto:Alv.Barnes@gmail.com' target='_blank'><FontAwesomeIcon icon={email}  /></a></li>
+              <li><a href='https://github.com/Khrononian' target='_blank'><FaGithubSquare /></a></li>
+              <li><a href='www.linkedin.com/in/alvin-barnes' target='_blank'><FaLinkedin /></a></li>
+              <li><a href='mailto:Alv.Barnes@gmail.com' target='_blank'><FaEnvelope /></a></li>
             </ul>
           </div>
         </div>

@@ -255,10 +255,10 @@ section h2 {
 }
 @keyframes colorGlow {
   0%, 100% {
-    color: #E53935;
+    opacity: 1;
   }
   50% {
-    color: #FF6666;
+    opacity: .8;
   }
 }
 @keyframes slides-left {
