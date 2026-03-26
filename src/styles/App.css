@@ -89,16 +89,16 @@ nav .menu {
 }
 .left-stats {
     transform: translate(30%, 180%) rotate(80deg);
-    animation: soft-float-left 7s linear infinite 3.5s;
+    animation: soft-float-left 7s ease-in-out infinite 3.5s;
 }
 .middle-stats {
     transform: rotate(20deg);
     transform: translate(0%, 50%) rotate(20deg);
-    animation: soft-float-middle 7s linear infinite 3.5s;
+    animation: soft-float-middle 7s ease-in-out infinite 3.5s;
 }
 .right-stats {
     transform: translate(-30%, 180%) rotate(80deg);
-    animation: soft-float-right 7s linear infinite 3.5s;
+    animation: soft-float-right 7s ease-in-out infinite 3.5s;
 }
 
 header {
