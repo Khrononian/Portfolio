@@ -77,6 +77,29 @@ nav .menu {
   color: #E53935;
   animation: colorGlow 2.8s ease-in-out infinite; 
 }
+.nav-icon {
+  position: absolute;
+  left: 2%;
+  top: 5%;
+  color: #dc143cc7;
+}
+.left-stats, .right-stats {
+    transform: rotate(80deg);
+    align-self: center;
+}
+.left-stats {
+    transform: translate(30%, 180%) rotate(80deg);
+    animation: soft-float-left 7s linear infinite 3.5s;
+}
+.middle-stats {
+    transform: rotate(20deg);
+    transform: translate(0%, 50%) rotate(20deg);
+    animation: soft-float-middle 7s linear infinite 3.5s;
+}
+.right-stats {
+    transform: translate(-30%, 180%) rotate(80deg);
+    animation: soft-float-right 7s linear infinite 3.5s;
+}
 
 header {
   background: #0F0F0F;
