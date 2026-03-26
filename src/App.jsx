@@ -5,6 +5,7 @@ import Projects from './Components/Projects'
 import Footer from './Components/Footer'
 import { FaEnvelope, FaCode, FaGlobe, FaGamepad, FaWifi, FaDesktop, FaBars, FaGithubSquare, FaLinkedin } from "react-icons/fa";
 import { ImCross } from "react-icons/im";
+import { FaCircleNodes } from "react-icons/fa6";
 import './styles/App.css'
 
 function App() {
@@ -63,6 +64,13 @@ function App() {
       <nav >
         <a onClick={showHamburgerMenu} className={menuToggle == false ? 'menu slides-right' : 'menu slides-left'}>{menuToggle == false ? <FaBars /> : <ImCross />} </a>
         <ul className='main-list'>
+          <li>
+            <div className='nav-icon'>
+              <FaCircleNodes className='left-stats' />
+              <FaCircleNodes className='middle-stats' />
+              <FaCircleNodes className='right-stats' />
+            </div>
+          </li>
           <li><a href='#about' className='anchor-links'>About</a></li>
           <li><a href='#projects' className='anchor-links'>Projects</a></li>
           <li><a href='#contact' className='anchor-links'>Contact</a></li>
