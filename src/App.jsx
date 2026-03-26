@@ -9,7 +9,6 @@ import { FaCircleNodes } from "react-icons/fa6";
 import './styles/App.css'
 
 function App() {
-  // const [showHeaders, setShowHeaders] = useState(false) 
   const [index, setIndex] = useState(0)
   const [menuToggle, setMenuToggle] = useState(false)
   const [toggleAnimation, setToggleAnimation] = useState(false)
@@ -17,12 +16,6 @@ function App() {
   const Icon = icons[index]
   const menuRef = useRef()
   const iconRef = useRef()
-  
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     setShowHeaders(true)
-  //   }, 3200)
-  // })
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -60,7 +53,6 @@ function App() {
 
   return (
     <main>
-      {/* {showHeaders == false ? <Loading /> : null}  */}
       <nav >
         <a onClick={showHamburgerMenu} className={menuToggle == false ? 'menu slides-right' : 'menu slides-left'}>{menuToggle == false ? <FaBars /> : <ImCross />} </a>
         <ul className='main-list'>
@@ -77,7 +69,6 @@ function App() {
           <li><a href='https://flowcv.com/resume/vmckrler4r' target='_blank' className='nav-resume'>Resume</a></li>
         </ul>
       </nav>
-
       <div className={menuToggle == false ? 'nav-list menu-appear-up' : 'nav-list menu-appear-down'} ref={menuRef}>
         <ul>
           <li>About</li>
