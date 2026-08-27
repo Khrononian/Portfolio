@@ -87,6 +87,9 @@ function App() {
           <h4>Skills</h4>
           <ul className='header-list'>
             <li>React</li>
+            <li>NodeJS</li>
+            <li>ExpressJS</li>
+            <li>SQL</li>
             <li>TypeScript</li>
             <li>JavaScript</li>
             <li>REST APIs</li>
