@@ -89,7 +89,7 @@ function App() {
             <li>React</li>
             <li>NodeJS</li>
             <li>ExpressJS</li>
-            <li>SQL</li>
+            <li>SQL/Postgresql</li>
             <li>TypeScript</li>
             <li>JavaScript</li>
             <li>REST APIs</li>
