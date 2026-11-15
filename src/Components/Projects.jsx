@@ -3,10 +3,12 @@ import fallout from '../images/fallouterminalv2.webp'
 import calculator from '../images/tscalculatorv2.webp'
 import waldo from '../images/whereswaldov2.webp'
 import leagueoflegends from '../images/leagueoflegendsv2.webp'
+import gamesinventory from '../images/gamesinventoryv2.png'
 import { FaExternalLinkAlt } from "react-icons/fa";
 
 const Projects = () => {
   return (
+    // IMAGES ASPECT RATIO ARE 4 BY 3 
     <section className='projects fadeUp' id='projects'>
         <h2>Projects</h2>
         <div className='project-container'>
@@ -20,6 +22,19 @@ const Projects = () => {
                 </div>
                 <p><span>React</span></p>
                 <p>A recreation of the in-game computer terminals from the Fallout series. Text based hacking mini game simulated with a retro futuristic green monochrome interface built with react.</p>
+              </div>
+            </div>
+          </a>
+          <a className='link' href='https://games-inventory-24pl.onrender.com/' aria-label='Games Inventory link' target='_blank'>
+            <div className='card'>
+              <img src={gamesinventory} alt='Games Inventory'/>
+              <div>
+                <div className='header-btn'>
+                  <h3>Games Inventory</h3>
+                   <FaExternalLinkAlt />
+                </div>
+                <p><span>Node.JS</span><span>Express</span><span>PostgreSQL</span></p>
+                <p>A simple app to manage and track your game collection, including details like title, genre, and release date.</p>
               </div>
             </div>
           </a>
